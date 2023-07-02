@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class Character_Status : MonoBehaviour
 {
-    public string Name;   // 이름
-    public int WIL;       // 정신력
-
+    public string Name;      // 이름
+    public int WIL;          // 정신력
     public double atk;       // 근력
     public double con;       // 건강
     public double siz;       // 크기
@@ -113,5 +112,26 @@ public class Character_Status : MonoBehaviour
     private void InitializeApDP()
     {
         ap_DP = 0.0;   // 마법방어력 초기화
+    }
+
+    // 대미지를 입는 메서드
+    public void TakeDamage(double damage)
+    {
+        currentHP -= (long)damage;
+        Debug.Log(Name + "이(가) " + damage + "의 피해를 입었습니다. 현재 체력: " + currentHP);
+
+        // 체력이 0 이하일 경우에 대한 처리
+        if (currentHP <= 0)
+        {
+            Die();
+        }
+    }
+
+    // 사망 처리 메서드
+    private void Die()
+    {
+        // 사망 시 수행해야 할 동작 및 게임 오버 등을 구현
+        Debug.Log(Name + "이(가) 사망했습니다.");
+        // 사망에 따른 추가적인 처리 작성
     }
 }
