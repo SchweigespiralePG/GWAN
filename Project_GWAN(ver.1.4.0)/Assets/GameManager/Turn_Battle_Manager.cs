@@ -6,24 +6,30 @@ public class Turn_Battle_Manager : MonoBehaviour
 {
     private bool isPlayerTurn = true;  // 플레이어 턴 여부를 나타내는 변수
     private int turnCount = 0;        // 턴 수를 카운트하는 변수
+    private Character_Status playerCharacter;  // 플레이어 캐릭터의 스테이터스
+    private Character_Status enemyCharacter;   // 적 캐릭터의 스테이터스
 
-    // 게임 시작 시 호출되는 메서드
     private void Start()
     {
-        // 게임을 시작하고 플레이어의 첫 번째 턴으로 설정
+        playerCharacter = GameObject.Find("PlayerCharacter").GetComponent<Character_Status>();
+        // "PlayerCharacter"는 플레이어 캐릭터의 게임 오브젝트 이름에 맞게 수정해야함
+
+        enemyCharacter = GameObject.Find("EnemyCharacter").GetComponent<Character_Status>();
+        // "EnemyCharacter"는 적 캐릭터의 게임 오브젝트 이름에 맞게 수정해야함
+
         StartPlayerTurn();
     }
 
-    // 플레이어의 턴 시작
     private void StartPlayerTurn()
     {
-        isPlayerTurn = true;
-        turnCount++;
-        Debug.Log("=== 턴 " + turnCount + " ===");
+        Debug.Log("=== 턴 시작 ===");
         Debug.Log("플레이어의 턴입니다.");
-        // 플레이어의 턴에 필요한 동작 수행
-        // 예: 플레이어 입력을 받아 공격을 실행하거나 다른 행동을 수행한다.
-        // 다음에 호출될 메서드: EndPlayerTurn();
+
+        // 플레이어 캐릭터의 스테이터스를 가져와서 사용
+        Debug.Log("플레이어 이름: " + playerCharacter.Name);
+        Debug.Log("플레이어 체력: " + playerCharacter.currentHP);
+
+        EndPlayerTurn();
     }
 
     // 플레이어의 턴 종료

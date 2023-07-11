@@ -19,9 +19,12 @@ public class Character_Status : MonoBehaviour
     public double ad_DP;     // 방어력
     public double ap_DP;     // 마법방어력
 
+    public BuffDebuffManager buffDebuffManager;  // 버프/디버프 매니저 참조
+
     // 스테이터스 초기화
     private void Start()
     {
+        buffDebuffManager = new BuffDebuffManager();
         InitializeStats();
     }
 
@@ -133,5 +136,72 @@ public class Character_Status : MonoBehaviour
         // 사망 시 수행해야 할 동작 및 게임 오버 등을 구현
         Debug.Log(Name + "이(가) 사망했습니다.");
         // 사망에 따른 추가적인 처리 작성
+    }
+}
+public class BuffDebuff
+{
+    public string name;  // 버프 또는 디버프의 이름
+    public int duration; // 버프 또는 디버프의 지속시간
+    public int effect;   // 버프 또는 디버프의 효과 (예: 체력 증가, 방어력 감소 등)
+    public Character_Status character; // 이 버프 또는 디버프가 적용되는 캐릭터
+}
+
+public class BuffDebuffManager
+{
+    public List<BuffDebuff> buffs;   // 버프 리스트
+    public List<BuffDebuff> debuffs; // 디버프 리스트
+
+    public BuffDebuffManager()
+    {
+        buffs = new List<BuffDebuff>();
+        debuffs = new List<BuffDebuff>();
+    }
+
+    // 버프 처리 메서드
+    public void ProcessBuffs()
+    {
+        for (int i = buffs.Count - 1; i >= 0; i--)
+        {
+            BuffDebuff bd = buffs[i];
+
+            // 버프가 "힘"이면 힘 버프를 적용
+            if (bd.name == "힘")
+            {
+                bd.character.atk += 1; // 캐릭터의 근력을 1 증가시킵니다.
+            }
+
+            // 버프 지속시간 감소
+            bd.duration--;
+
+            // 지속시간이 0 이하인 경우 리스트에서 제거
+            if (bd.duration <= 0)
+            {
+                buffs.RemoveAt(i);
+            }
+        }
+    }
+
+    // 디버프 처리 메서드
+    public void ProcessDebuffs()
+    {
+        for (int i = debuffs.Count - 1; i >= 0; i--)
+        {
+            BuffDebuff bd = debuffs[i];
+
+            // 디버프가 "독"이면 독 디버프를 적용
+            if (bd.name == "독")
+            {
+                bd.character.currentHP -= 1; // 캐릭터의 체력을 1 감소시킵니다.
+            }
+
+            // 디버프 지속시간 감소
+            bd.duration--;
+
+            // 지속시간이 0 이하인 경우 리스트에서 제거
+            if (bd.duration <= 0)
+            {
+                debuffs.RemoveAt(i);
+            }
+        }
     }
 }
