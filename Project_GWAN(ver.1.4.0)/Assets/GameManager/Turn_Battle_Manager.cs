@@ -9,6 +9,8 @@ public class Turn_Battle_Manager : MonoBehaviour
     private Character_Status playerCharacter;  // 플레이어 캐릭터의 스테이터스
     private Character_Status enemyCharacter;   // 적 캐릭터의 스테이터스
 
+    private ButtonController buttonController;  // ButtonController 스크립트 참조 변수
+
     private void Start()
     {
         playerCharacter = GameObject.Find("PlayerCharacter").GetComponent<Character_Status>();
@@ -16,6 +18,8 @@ public class Turn_Battle_Manager : MonoBehaviour
 
         enemyCharacter = GameObject.Find("EnemyCharacter").GetComponent<Character_Status>();
         // "EnemyCharacter"는 적 캐릭터의 게임 오브젝트 이름에 맞게 수정해야함
+
+        buttonController = GetComponent<ButtonController>();  // ButtonController 스크립트 참조
 
         StartPlayerTurn();
     }
@@ -29,7 +33,9 @@ public class Turn_Battle_Manager : MonoBehaviour
         Debug.Log("플레이어 이름: " + playerCharacter.Name);
         Debug.Log("플레이어 체력: " + playerCharacter.currentHP);
 
-        EndPlayerTurn();
+        buttonController.attackButton.interactable = true;
+        buttonController.defenseButton.interactable = true;
+        buttonController.endTurnButton.interactable = true;
     }
 
     // 플레이어의 턴 종료
@@ -39,7 +45,7 @@ public class Turn_Battle_Manager : MonoBehaviour
         Debug.Log("플레이어의 턴이 종료되었습니다.");
 
         // 상대 NPC 또는 적의 턴으로 전환하는 코드 작성
-        // 예: StartEnemyTurn();
+        StartEnemyTurn();
     }
 
     // 상대 NPC 또는 적의 턴 시작
@@ -57,7 +63,7 @@ public class Turn_Battle_Manager : MonoBehaviour
         Debug.Log("상대의 턴이 종료되었습니다.");
 
         // 다시 플레이어의 턴으로 전환하는 코드 작성
-        // 예: StartPlayerTurn();
+        StartPlayerTurn();
     }
 
     // 턴 전환 버튼을 클릭할 때 호출되는 메서드
