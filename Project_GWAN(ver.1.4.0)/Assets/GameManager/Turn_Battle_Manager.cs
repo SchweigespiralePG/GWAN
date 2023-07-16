@@ -13,10 +13,10 @@ public class Turn_Battle_Manager : MonoBehaviour
 
     private void Start()
     {
-        playerCharacter = GameObject.Find("PlayerCharacter").GetComponent<Character_Status>();
+        playerCharacter = GameObject.Find("Alpha"/*PlayerCharacter*/).GetComponent<Character_Status>();
         // "PlayerCharacter"는 플레이어 캐릭터의 게임 오브젝트 이름에 맞게 수정해야함
 
-        enemyCharacter = GameObject.Find("EnemyCharacter").GetComponent<Character_Status>();
+        enemyCharacter = GameObject.Find("Beta"/*EnemyCharacter*/).GetComponent<Character_Status>();
         // "EnemyCharacter"는 적 캐릭터의 게임 오브젝트 이름에 맞게 수정해야함
 
         buttonController = GetComponent<ButtonController>();  // ButtonController 스크립트 참조
@@ -39,11 +39,14 @@ public class Turn_Battle_Manager : MonoBehaviour
     }
 
     // 플레이어의 턴 종료
-    private void EndPlayerTurn()
+    public void EndPlayerTurn()
     {
         isPlayerTurn = false;
         Debug.Log("플레이어의 턴이 종료되었습니다.");
 
+        buttonController.attackButton.interactable = false;
+        buttonController.defenseButton.interactable = false;
+        buttonController.endTurnButton.interactable = false;
         // 상대 NPC 또는 적의 턴으로 전환하는 코드 작성
         StartEnemyTurn();
     }

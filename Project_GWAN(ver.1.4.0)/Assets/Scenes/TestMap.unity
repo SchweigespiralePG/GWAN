@@ -1104,6 +1104,8 @@ GameObject:
   - component: {fileID: 1612787362}
   - component: {fileID: 1612787361}
   - component: {fileID: 1612787360}
+  - component: {fileID: 1612787364}
+  - component: {fileID: 1612787363}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1161,6 +1163,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1612787363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612787359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62b9deb1f1ecd114d86705151a3324e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackButton: {fileID: 2127789361}
+  defenseButton: {fileID: 1337609427}
+  endTurnButton: {fileID: 1256315473}
+  turnBattleManager: {fileID: 1612787364}
+--- !u!114 &1612787364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612787359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84ea613a626d8f2428bac7570a2c24a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1946496615
 GameObject:
   m_ObjectHideFlags: 0
