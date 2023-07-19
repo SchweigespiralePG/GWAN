@@ -18,6 +18,7 @@ public class Character_Status : MonoBehaviour
     public long currentHP;   // 현재 체력
     public double ad_DP;     // 방어력
     public double ap_DP;     // 마법방어력
+    public bool isDefending { get; private set; } = false;  //방어상태
 
     public BuffDebuffManager buffDebuffManager;  // 버프/디버프 매니저 참조
 
@@ -25,11 +26,11 @@ public class Character_Status : MonoBehaviour
     private void Start()
     {
         buffDebuffManager = new BuffDebuffManager();
-        InitializeStats();
+        //InitializeStats();
     }
 
     // 스테이터스 초기화 메서드
-    private void InitializeStats()
+    private void InitializeStats() 
     {
         InitializeName();
         InitializeWIL();
@@ -115,6 +116,18 @@ public class Character_Status : MonoBehaviour
     private void InitializeApDP()
     {
         ap_DP = 0.0;   // 마법방어력 초기화
+    }
+
+    public void StartDefending()
+    {
+        Debug.Log("방어상태 활성");
+        isDefending = true; //방어상태 활성
+    }
+
+    public void StopDefending()
+    {
+        Debug.Log("방어상태 비활성");
+        isDefending = false;    //방어상태 비활성
     }
 
     // 대미지를 입는 메서드

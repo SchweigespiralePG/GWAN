@@ -57,8 +57,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\GameManager\Turn_Battle_Manager.cs" />
-    <Compile Include="Assets\Scrpts\Character_Status.cs" />
     <Compile Include="Assets\Scrpts\AttackScript.cs" />
+    <Compile Include="Assets\Scrpts\Character_Status.cs" />
+    <Compile Include="Assets\GameManager\ButtonController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
