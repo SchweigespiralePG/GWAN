@@ -1106,6 +1106,7 @@ GameObject:
   - component: {fileID: 1612787360}
   - component: {fileID: 1612787364}
   - component: {fileID: 1612787363}
+  - component: {fileID: 1612787365}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1179,8 +1180,8 @@ MonoBehaviour:
   defenseButton: {fileID: 1337609427}
   endTurnButton: {fileID: 1256315473}
   turnBattleManager: {fileID: 1612787364}
-  attack: {fileID: 0}
-  playerStatus: {fileID: 0}
+  attack: {fileID: 1612787365}
+  playerStatus: {fileID: 1946496616}
 --- !u!114 &1612787364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1195,6 +1196,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerGameObject: {fileID: 1946496615}
   enemyGameObject: {fileID: 541766436}
+--- !u!114 &1612787365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612787359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16d118a2ae33ac140909dc2869220e55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1946496615
 GameObject:
   m_ObjectHideFlags: 0
