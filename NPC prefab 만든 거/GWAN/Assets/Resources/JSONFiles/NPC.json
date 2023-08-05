@@ -1,0 +1,44 @@
+{
+    "NPC": [
+        {
+            "UID": 1,
+            "characterName": "라인하트",
+            "species": "aslan",
+            "str": 29,
+            "con": 44,
+            "siz": 94,
+            "intl": 113.5,
+            "apd": 11,
+            "dex": 1.0,
+            "luk": 109,
+            "hp": 44.5,
+            "dp": 707,
+            "atk": 15,
+            "mDef": 1808,
+            "sight": 110.5,
+            "spiritual": 4.4,
+            "type": "buffer",
+            "job": "guard"
+        },
+        {
+            "UID": 2,
+            "characterName": "라인하트2",
+            "species": "aslan",
+            "str": 29,
+            "con": 44,
+            "siz": 94,
+            "intl": 113.5,
+            "apd": 11,
+            "dex": 1.0,
+            "luk": 109,
+            "hp": 44.5,
+            "dp": 707,
+            "atk": 15,
+            "mDef": 1808,
+            "sight": 110.5,
+            "spiritual": 4.4,
+            "type": "buffer",
+            "job": "guard"
+        }
+    ]
+}
