@@ -1,0 +1,116 @@
+{
+    "SPECIES" : [
+        {
+            "Tag": "ancients",
+            "Name": "에인션츠",
+            "Species Tag A": 5,
+            "Species Tag B": 1,
+            "Card": "A"
+        },
+        {
+            "Tag": "thalia",
+            "Name": "탈리아",
+            "Species Tag A": "Species Tag A * 2",
+            "Species Tag B": "Species Tag B * 2",
+            "Card": "_"
+        },
+        {
+            "Tag": "behemoth",
+            "Name": "베해모스",
+            "Species Tag A": "Species Tag A * 2",
+            "Species Tag B": "Species Tag B * 2",
+            "Card": "_"
+        },
+        {
+            "Tag": "sarag",
+            "Name": "사라그",
+            "Species Tag A": 8.75,
+            "Species Tag B": 3,
+            "Card": "2"
+        },
+        {
+            "Tag": "sankta",
+            "Name": "산크타",
+            "Species Tag A": 8.75,
+            "Species Tag B": 3,
+            "Card": "3"
+        },
+        {
+            "Tag": "ymir",
+            "Name": "이미르",
+            "Species Tag A": 8.75,
+            "Species Tag B": 3,
+            "Card": "4"
+        },
+        {
+            "Tag": "ryu",
+            "Name": "용",
+            "Species Tag A": 8.75,
+            "Species Tag B": 2,
+            "Card": "5"
+        },
+        {
+            "Tag": "wyvern",
+            "Name": "와이번",
+            "Species Tag A": 8.75,
+            "Species Tag B": 2,
+            "Card": "6"
+        },
+        {
+            "Tag": "addax",
+            "Name": "아닥스",
+            "Species Tag A": 5,
+            "Species Tag B": 1.25,
+            "Card": "7"
+        },
+        {
+            "Tag": "aslan",
+            "Name": "아슬란",
+            "Species Tag A": 6.5,
+            "Species Tag B": 1.5,
+            "Card": "8"
+        },
+        {
+            "Tag": "billeen",
+            "Name": "필라인",
+            "Species Tag A": 6,
+            "Species Tag B": 1.3,
+            "Card": "9"
+        },
+        {
+            "Tag": "lupelt",
+            "Name": "루펠트",
+            "Species Tag A": 6.5,
+            "Species Tag B": 1.3,
+            "Card": "10"
+        },
+        {
+            "Tag": "liberia",
+            "Name": "라이베리아",
+            "Species Tag A": 6.5,
+            "Species Tag B": 1.5,
+            "Card": "J"
+        },
+        {
+            "Tag": "navian",
+            "Name": "나비안",
+            "Species Tag A": 5,
+            "Species Tag B": 1.3,
+            "Card": "Q"
+        },
+        {
+            "Tag": "gamad",
+            "Name": "가마드",
+            "Species Tag A": 3.75,
+            "Species Tag B": 0.7,
+            "Card": "K"
+        },
+        {
+            "Tag": "xenomorph",
+            "Name": "제노모프",
+            "Species Tag A": 10,
+            "Species Tag B": 0.25,
+            "Card": "Black Joker"
+        }
+    ]
+}
