@@ -6,7 +6,6 @@ public class Turn_Battle_Manager : MonoBehaviour
 {
 
     private bool isPlayerTurn = true;  // 플레이어 턴 여부를 나타내는 변수
-    private int turnCount = 0;        // 턴 수를 카운트하는 변수
     public GameObject playerGameObject;
     public GameObject enemyGameObject;
 
