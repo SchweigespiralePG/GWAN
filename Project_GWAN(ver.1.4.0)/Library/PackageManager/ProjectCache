@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638265052440000000
-    m_Hash: 3842001391
+      ticks: 638270991440042828
+    m_Hash: 858892524
   m_LockFileStatus:
     m_FilePath: D:/GWAN/Project_GWAN(ver.1.4.0)/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638265052440000000
-    m_Hash: 2606399936
+      ticks: 638270991440047828
+    m_Hash: 3493606206
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:

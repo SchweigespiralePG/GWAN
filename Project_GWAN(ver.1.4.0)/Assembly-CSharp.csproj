@@ -56,12 +56,12 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scrpts\MapScrpts\PlayerHexTile.cs" />
     <Compile Include="Assets\GameManager\Turn_Battle_Manager.cs" />
     <Compile Include="Assets\Scrpts\AttackScript.cs" />
     <Compile Include="Assets\Scrpts\Character_Status.cs" />
-    <Compile Include="Assets\GameManager\ButtonController.cs" />
     <Compile Include="Assets\Scrpts\MapScrpts\HexTile.cs" />
-    <Compile Include="Assets\Scrpts\MapScrpts\PlayerHexTile.cs" />
+    <Compile Include="Assets\GameManager\ButtonController.cs" />
     <Compile Include="Assets\Scrpts\MapScrpts\PlayerMove.cs" />
   </ItemGroup>
   <ItemGroup>
