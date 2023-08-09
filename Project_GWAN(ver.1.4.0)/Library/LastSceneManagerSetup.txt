@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/HexMap.unity
+- path: Assets/Scenes/Agarta.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
