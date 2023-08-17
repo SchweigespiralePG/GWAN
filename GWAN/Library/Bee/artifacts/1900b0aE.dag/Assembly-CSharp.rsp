@@ -349,6 +349,7 @@
 "Assets/GameManager/Turn_Battle_Manager.cs"
 "Assets/Scrpts/AttackScript.cs"
 "Assets/Scrpts/Character_Status.cs"
+"Assets/Scrpts/MapScrpts/EventHexTile.cs"
 "Assets/Scrpts/MapScrpts/HexTile.cs"
 "Assets/Scrpts/MapScrpts/PlayerHexTile.cs"
 "Assets/Scrpts/MapScrpts/PlayerMove.cs"

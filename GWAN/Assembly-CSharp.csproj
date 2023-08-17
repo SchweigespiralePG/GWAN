@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scrpts\MapScrpts\HexTile.cs" />
     <Compile Include="Assets\GameManager\ButtonController.cs" />
     <Compile Include="Assets\Scrpts\MapScrpts\PlayerMove.cs" />
+    <Compile Include="Assets\Scrpts\MapScrpts\EventHexTile.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

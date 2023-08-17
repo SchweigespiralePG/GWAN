@@ -84,6 +84,8 @@ public class PlayerMove : MonoBehaviour
     {
         if (isMoving)
         {
+
+
             // 목표 위치로 플레이어 이동
             transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
 

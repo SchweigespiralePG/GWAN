@@ -311,6 +311,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   rotationSpeed: 5
+--- !u!114 &954607853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954607849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f541c7c5c06decb45ac2da532a042af2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &971748561
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -318,9 +330,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1315478563560014674, guid: b5dbf2090e14c8d479a108c9b4f25de0, type: 3}
+      propertyPath: hexType
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2115017193390362295, guid: b5dbf2090e14c8d479a108c9b4f25de0, type: 3}
       propertyPath: m_Name
       value: (4X4)HexTile
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794479068154605920, guid: b5dbf2090e14c8d479a108c9b4f25de0, type: 3}
+      propertyPath: hexType
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3775190877444127390, guid: b5dbf2090e14c8d479a108c9b4f25de0, type: 3}
       propertyPath: m_RootOrder
@@ -365,6 +385,14 @@ PrefabInstance:
     - target: {fileID: 3775190877444127390, guid: b5dbf2090e14c8d479a108c9b4f25de0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6307516887674870144, guid: b5dbf2090e14c8d479a108c9b4f25de0, type: 3}
+      propertyPath: hexType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7291569764183769134, guid: b5dbf2090e14c8d479a108c9b4f25de0, type: 3}
+      propertyPath: hexType
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5dbf2090e14c8d479a108c9b4f25de0, type: 3}
