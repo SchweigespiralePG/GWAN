@@ -9,6 +9,9 @@ public class PlayerMove : MonoBehaviour
     [SerializeField]
     private float speed = 5f;
 
+    [SerializeField]
+    private float rotationSpeed = 5f;
+
     // 플레이어가 이동할 대상 위치
     private Vector3 targetPosition;
 
@@ -81,15 +84,32 @@ public class PlayerMove : MonoBehaviour
     {
         if (isMoving)
         {
-            // 대상 위치로 플레이어를 부드럽게 이동
+
+
+            // 목표 위치로 플레이어 이동
             transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
 
-            // 대상 위치에 도달했다면 이동을 멈춤
+            // 플레이어가 이동하는 방향 계산
+            Vector3 direction = (targetPosition - transform.position).normalized;
+
+            // 플레이어가 실제로 이동하는 경우 (즉, 방향 벡터가 0이 아닌 경우)
+            if (direction != Vector3.zero)
+            {
+                // 이동 방향을 기반으로 목표 회전 계산
+                Quaternion targetRotation = Quaternion.LookRotation(direction);
+
+                // 목표 회전으로 플레이어 부드럽게 회전
+                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotationSpeed);
+            }
+
+            // 목표 위치에 도달하면 이동 중지
             if (transform.position == targetPosition)
             {
                 isMoving = false;
             }
         }
+
     }
+
 
 }

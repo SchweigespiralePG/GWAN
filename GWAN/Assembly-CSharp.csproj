@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{086EE544-3D70-BCE4-5E6E-7911F0A20458}</ProjectGuid>
+    <ProjectGuid>{6DD2B653-5A7E-2D85-9D30-3CB5895A88A0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scrpts\MapScrpts\HexTile.cs" />
     <Compile Include="Assets\GameManager\ButtonController.cs" />
     <Compile Include="Assets\Scrpts\MapScrpts\PlayerMove.cs" />
+    <Compile Include="Assets\Scrpts\MapScrpts\EventHexTile.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
