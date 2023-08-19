@@ -4,5 +4,26 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/VERTEX.unity
+    guid: c5f7d5798e0893649925cabd3b754f74
+  - enabled: 1
+    path: Assets/Scenes/VIEW/Screen [TITLE].unity
+    guid: dec4decdf1b6c6d4bbf68ab07e3d19ac
+  - enabled: 1
+    path: Assets/Scenes/MENU/Screen [M_MENU].unity
+    guid: 85ee432b1cb3e0e4bb1bb136db23fd28
+  - enabled: 1
+    path: Assets/Scenes/VIEW/Screen [START].unity
+    guid: f1c36e1784fb26843ab42289e4e5242b
+  - enabled: 1
+    path: Assets/Scenes/VIEW/Screen [SETTINGS].unity
+    guid: 2955630ac4c8c2e4b85b158d8891c863
+  - enabled: 1
+    path: Assets/Scenes/VIEW/Screen [OMAKE].unity
+    guid: a60296324daf4b54f9fa59a847e3af55
+  - enabled: 1
+    path: Assets/Scenes/VIEW/Screen [LOAD].unity
+    guid: 830bff688d14d7543b7f2afd5027bcd0
   m_configObjects: {}
