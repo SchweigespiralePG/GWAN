@@ -18,6 +18,9 @@ public class PlayerMove : MonoBehaviour
     // 플레이어의 이동 상태 (true: 이동 중, false: 정지)
     private bool isMoving = false;
 
+    // 플레이어의 이벤트 상태 (true: 이벤트 중, false: 종료)
+    private bool isEvent = false;
+
     // Ray의 최대 길이
     private float rayLength = 100f;
 
@@ -29,6 +32,9 @@ public class PlayerMove : MonoBehaviour
 
     // PlayerHexTile 스크립트의 참조
     private PlayerHexTile playerHexTile;
+
+
+
 
     private void Start()
     {
@@ -47,6 +53,7 @@ public class PlayerMove : MonoBehaviour
 
         // 플레이어 이동 처리
         MovePlayer();
+        EventHexTile();
     }
 
     // 마우스 클릭 위치에 Ray를 발사하여 타겟 위치를 감지하는 메서드
@@ -71,10 +78,12 @@ public class PlayerMove : MonoBehaviour
             if (Mathf.Abs(x - NextX) <= 1 && Mathf.Abs(y - NextY) <= 1 && Mathf.Abs(z - NextZ) <= 1)
             {
                 isMoving = true;
+                isEvent = true;
             }
             else
             {
                 isMoving = false;
+                isEvent = false;
             }
         }
     }
@@ -111,5 +120,25 @@ public class PlayerMove : MonoBehaviour
 
     }
 
-
+    //이벤트 타일 확인
+    private void EventHexTile()
+    {
+        if (isEvent)
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit))
+            {
+                // 닿은 객체가 HexTile 컴포넌트를 가지고 있는지 확인
+                HexTile hexTile = hit.transform.GetComponent<HexTile>();
+                if (hexTile != null)
+                {
+                    // 닿은 HexTile에서 HexType 가져오기
+                    HexType type = hexTile.hexType;
+                    Debug.Log($"닿은 HexTile의 HexType: {type}");
+                    isEvent = false;
+                }
+            }
+        }
+    }
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.UIElements;
 
 public class HexTile: MonoBehaviour
@@ -12,6 +13,10 @@ public class HexTile: MonoBehaviour
 
     public int x,y,z;
 
+    //이벤트 타일 방문 여부
+    public bool visited = true;
+
+    //타일 좌표
     private void Awake()
     {
         x = Mathf.CeilToInt(transform.position.x / xOffset);
@@ -21,6 +26,7 @@ public class HexTile: MonoBehaviour
 
 }
 
+//타일 종류
 public enum HexType{
     None,
     Default,
