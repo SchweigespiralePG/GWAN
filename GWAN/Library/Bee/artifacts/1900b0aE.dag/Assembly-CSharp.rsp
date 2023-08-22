@@ -346,8 +346,6 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Script/AttackScript.cs"
-"Assets/Script/Card/Order.cs"
-"Assets/Script/Card/SO/ItemSO.cs"
 "Assets/Script/Character_Status.cs"
 "Assets/Script/GameManager/ButtonController.cs"
 "Assets/Script/GameManager/Turn_Battle_Manager.cs"

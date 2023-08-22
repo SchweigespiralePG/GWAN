@@ -68,8 +68,6 @@
     <Compile Include="Assets\Script\Menu\M_MenuButtonSystem.cs" />
     <Compile Include="Assets\Script\Scene Load\LevelLoader.cs" />
     <Compile Include="Assets\Script\MapScrpts\PlayerMove.cs" />
-    <Compile Include="Assets\Script\Card\SO\ItemSO.cs" />
-    <Compile Include="Assets\Script\Card\Order.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
