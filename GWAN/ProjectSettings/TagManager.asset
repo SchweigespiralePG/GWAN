@@ -32,11 +32,11 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - (Card)Background
+  - (Card)Star
+  - (Card)Element
+  - (Card)text
+  - (Card)Img
   m_SortingLayers:
   - name: Default
     uniqueID: 0
