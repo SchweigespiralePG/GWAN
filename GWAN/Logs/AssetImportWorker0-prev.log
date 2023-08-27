@@ -15,7 +15,7 @@ D:/GWAN/GWAN
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59546
+63825
 Successfully changed project path to: D:/GWAN/GWAN
 D:/GWAN/GWAN
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ D:/GWAN/GWAN
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [7728] Host "[IP] 210.204.200.250 [Port] 0 [Flags] 2 [Guid] 649539366 [EditorId] 649539366 [Version] 1048832 [Id] WindowsEditor(7,PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [3716] Host "[IP] 210.204.200.250 [Port] 0 [Flags] 2 [Guid] 1075188675 [EditorId] 1075188675 [Version] 1048832 [Id] WindowsEditor(7,PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [7728] Host "[IP] 210.204.200.250 [Port] 0 [Flags] 2 [Guid] 649539366 [EditorId] 649539366 [Version] 1048832 [Id] WindowsEditor(7,PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [3716] Host "[IP] 210.204.200.250 [Port] 0 [Flags] 2 [Guid] 1075188675 [EditorId] 1075188675 [Version] 1048832 [Id] WindowsEditor(7,PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 61.18 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 60.07 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.25f1 (68ef2c4f8861)
 [Subsystems] Discovering subsystems at path D:/unity game/2021.3.25f1/Editor/Data/Resources/UnitySubsystems
@@ -67,89 +67,89 @@ Initialize mono
 Mono path[0] = 'D:/unity game/2021.3.25f1/Editor/Data/Managed'
 Mono path[1] = 'D:/unity game/2021.3.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/unity game/2021.3.25f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56712
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56948
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/unity game/2021.3.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003750 seconds.
+Registered in 0.003310 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 57.86 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 60.37 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.493 seconds
+- Completed reload, in  0.507 seconds
 Domain Reload Profiling:
-	ReloadAssembly (494ms)
-		BeginReloadAssembly (87ms)
+	ReloadAssembly (507ms)
+		BeginReloadAssembly (84ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (330ms)
-			LoadAssemblies (87ms)
+		EndReloadAssembly (346ms)
+			LoadAssemblies (83ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (76ms)
+			SetupTypeCache (78ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (20ms)
-			SetupLoadedEditorAssemblies (197ms)
+			SetupLoadedEditorAssemblies (212ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (58ms)
+				RefreshPlugins (61ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (93ms)
-				ProcessInitializeOnLoadMethodAttributes (39ms)
+				ProcessInitializeOnLoadAttributes (98ms)
+				ProcessInitializeOnLoadMethodAttributes (46ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005888 seconds.
+Registered in 0.005996 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\GWAN\GWAN\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\GWAN\GWAN\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.92 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.834 seconds
+- Completed reload, in  0.772 seconds
 Domain Reload Profiling:
-	ReloadAssembly (835ms)
-		BeginReloadAssembly (113ms)
+	ReloadAssembly (772ms)
+		BeginReloadAssembly (112ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (19ms)
-		EndReloadAssembly (642ms)
-			LoadAssemblies (90ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (580ms)
+			LoadAssemblies (92ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (215ms)
+			SetupTypeCache (188ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (283ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (259ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (1ms)
+				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (64ms)
-				ProcessInitializeOnLoadAttributes (193ms)
+				BeforeProcessingInitializeOnLoad (58ms)
+				ProcessInitializeOnLoadAttributes (175ms)
 				ProcessInitializeOnLoadMethodAttributes (16ms)
 				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3074 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 24 unused Assets / (114.1 KB). Loaded Objects now: 3540.
 Memory consumption went from 115.4 MB to 115.3 MB.
-Total: 2.561200 ms (FindLiveObjects: 0.299100 ms CreateObjectMapping: 0.091000 ms MarkObjects: 2.067900 ms  DeleteObjects: 0.102600 ms)
+Total: 2.503900 ms (FindLiveObjects: 0.248400 ms CreateObjectMapping: 0.079200 ms MarkObjects: 2.078500 ms  DeleteObjects: 0.097100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -163,7 +163,55 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 92594.209689 seconds.
-  path: Assets/Scenes/Test/Card/Card.unity
-  artifactKey: Guid(2d84daf90238e5a4496b16c7b234f091) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Test/Card/Card.unity using Guid(2d84daf90238e5a4496b16c7b234f091) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53303145fb60143428e3bf697b3c913d') in 0.017125 seconds 
+  Time since last request: 119262.253417 seconds.
+  path: Assets/Card/Icon
+  artifactKey: Guid(aa616bb0f6ec64a469a4414d57600af6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Card/Icon using Guid(aa616bb0f6ec64a469a4414d57600af6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac30f571143a7fa26978ae53818bb570') in 0.015380 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 90.509515 seconds.
+  path: Assets/Card/CardPrifab
+  artifactKey: Guid(a3ae879007505b44aaace67c8646d29e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Card/CardPrifab using Guid(a3ae879007505b44aaace67c8646d29e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf94547450a4833b0a58be3bff034e82') in 0.011941 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.903554 seconds.
+  path: Assets/Card/CardPrifab/반전카드
+  artifactKey: Guid(1667ca39179da1e418ccf6ff666af8cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Card/CardPrifab/반전카드 using Guid(1667ca39179da1e418ccf6ff666af8cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e59bb8c6d5d38d3336ceaf35f1065645') in 0.298723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Card/CardPrifab/반전카드/4성카드(반전).prefab
+  artifactKey: Guid(9cf39d0b0a94e8d4eb2343e119c793be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Card/CardPrifab/반전카드/4성카드(반전).prefab using Guid(9cf39d0b0a94e8d4eb2343e119c793be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '979f535530fa435081a8fd52c65e33c2') in 0.130550 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Card/CardPrifab/반전카드/6성카드(반전).prefab
+  artifactKey: Guid(d1eb1727440d68245945c668d42cbd30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Card/CardPrifab/반전카드/6성카드(반전).prefab using Guid(d1eb1727440d68245945c668d42cbd30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46b32a37dca4fad527e1bcf062019edd') in 0.021288 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 86.026988 seconds.
+  path: Assets/Script/Card
+  artifactKey: Guid(2bc060402b7e46b4b88c60cce42148fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Card using Guid(2bc060402b7e46b4b88c60cce42148fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6104a639898e96a9bfdba67403aeb5ab') in 0.002310 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.904640 seconds.
+  path: Assets/Scenes/GAME/HexMap.unity
+  artifactKey: Guid(cacd22c93ae5a3346993e306d0519b62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GAME/HexMap.unity using Guid(cacd22c93ae5a3346993e306d0519b62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35617739297fd8418d8ee3ea19975c08') in 0.010264 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.236148 seconds.
+  path: Assets/Scenes/GAME/Paratethys.unity
+  artifactKey: Guid(4886628496f706e45a73fced993c7406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GAME/Paratethys.unity using Guid(4886628496f706e45a73fced993c7406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c579c83cdbbe6b651535e9982744c0b') in 0.010336 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 111.758990 seconds.
+  path: Assets/Script/cAMERA
+  artifactKey: Guid(36f0057d358ecc4459bd622ebd1cc645) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/cAMERA using Guid(36f0057d358ecc4459bd622ebd1cc645) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f821a2b0a0db25f1e5063fc0d7fad844') in 0.011500 seconds 

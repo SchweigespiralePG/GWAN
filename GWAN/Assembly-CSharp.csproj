@@ -68,6 +68,15 @@
     <Compile Include="Assets\Script\Menu\M_MenuButtonSystem.cs" />
     <Compile Include="Assets\Script\Scene Load\LevelLoader.cs" />
     <Compile Include="Assets\Script\MapScrpts\PlayerMove.cs" />
+    <Compile Include="Assets\Card\Resources\CardDB\CardDB.cs" />
+    <Compile Include="Assets\Script\Book\Card.cs" />
+    <Compile Include="Assets\Script\Book\CardUI.cs" />
+    <Compile Include="Assets\Script\Book\Book.cs" />
+    <Compile Include="Assets\Script\Book\BookManager.cs" />
+    <Compile Include="Assets\Script\Book\CardSlot.cs" />
+    <Compile Include="Assets\Script\Book\CardSlotGridManager.cs" />
+    <Compile Include="Assets\Script\Book\Page.cs" />
+    <Compile Include="Assets\Script\Book\UIManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
