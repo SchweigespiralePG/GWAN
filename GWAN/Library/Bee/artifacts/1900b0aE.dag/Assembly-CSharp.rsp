@@ -355,6 +355,7 @@
 "Assets/Script/Book/CardUI.cs"
 "Assets/Script/Book/Page.cs"
 "Assets/Script/Book/UIManager.cs"
+"Assets/Script/camera/CameraManager.cs"
 "Assets/Script/Character_Status.cs"
 "Assets/Script/GameManager/ButtonController.cs"
 "Assets/Script/GameManager/Turn_Battle_Manager.cs"
