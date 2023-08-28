@@ -8,6 +8,9 @@ Project_GWAN 진행을 위한 저장소
 
 ### 팀원
 * [**@Teriri**](https://github.com/Nuloi)
+* [**@Hibiscus KN**](https://github.com/HibiscusKN)
+* [**@El**](https://github.com/aeranixia)
+* [**NaineSchweige**](https://github.com/NaineSchweige)
 
 ### 게임 소개
 
