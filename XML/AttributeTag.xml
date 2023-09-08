@@ -1,0 +1,71 @@
+<attributes>
+
+    <천>
+        <name>천</name>
+        <strengths>
+            <strength>
+                <against>지</against>
+                <multiplier>1.1</multiplier>
+            </strength>
+        </strengths>
+        <weaknesses>
+            <weakness>
+                <against>인</against>
+                <multiplier>0.9</multiplier>
+            </weakness>
+        </weaknesses>
+    </천>
+
+    <지>
+        <name>지</name>
+        <strengths>
+            <strength>
+                <against>인</against>
+                <multiplier>1.1</multiplier>
+            </strength>
+        </strengths>
+        <weaknesses>
+            <weakness>
+                <against>천</against>
+                <multiplier>0.9</multiplier>
+            </weakness>
+        </weaknesses>
+    </지>
+
+    <인>
+        <name>인</name>
+        <strengths>
+            <strength>
+                <against>천</against>
+                <multiplier>1.1</multiplier>
+            </strength>
+        </strengths>
+        <weaknesses>
+            <weakness>
+                <against>지</against>
+                <multiplier>0.9</multiplier>
+            </weakness>
+        </weaknesses>
+    </인>
+
+    <별>
+        <name>별</name>
+        <strengths>
+            <strength>
+                <against>짐승</against>
+                <multiplier>1.1</multiplier>
+            </strength>
+        </strengths>
+    </별>
+
+    <짐승>
+        <name>짐승</name>
+        <strengths>
+            <strength>
+                <against>별</against>
+                <multiplier>1.1</multiplier>
+            </strength>
+        </strengths>
+    </짐승>
+
+</attributes>

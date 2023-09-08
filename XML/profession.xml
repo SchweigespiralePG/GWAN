@@ -1,0 +1,43 @@
+<professions>
+
+    <Vanguard>
+        <name>뱅가드</name>
+        <statModification>apd * 3D2</statModification>
+    </Vanguard>
+    
+    <Guard>
+        <name>가드</name>
+        <statModification>atk * 2D4</statModification>
+    </Guard>
+    
+    <Defender>
+        <name>디펜더</name>
+        <statModification>con + 4D6</statModification>
+    </Defender>
+    
+    <Specialist>
+        <name>스패셜리스트</name>
+        <statModification>apdD2 &amp; atk + D2</statModification>
+    </Specialist>
+    
+    <Sniper>
+        <name>스나이퍼</name>
+        <statModification>apd * 3D2</statModification>
+    </Sniper>
+    
+    <Caster>
+        <name>캐스터</name>
+        <statModification>atk * 2D4</statModification>
+    </Caster>
+    
+    <Medic>
+        <name>매딕</name>
+        <statModification>con + 4D6</statModification>
+    </Medic>
+    
+    <Surporter>
+        <name>서포터</name>
+        <statModification>apdD2 &amp; atk + D2</statModification>
+    </Surporter>
+
+</professions>

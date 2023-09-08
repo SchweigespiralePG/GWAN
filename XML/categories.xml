@@ -1,0 +1,47 @@
+<categories>
+
+    <Ateacker>
+        <name>공격자</name>
+    </Ateacker>
+
+    <Breaker>
+        <name>파괴자</name>
+    </Breaker>
+
+    <Defender>
+        <name>수비자</name>
+    </Defender>
+
+    <Blaster>
+        <name>폭발자</name>
+    </Blaster>
+
+    <Arts_Ateacker>
+        <name>아츠 공격자</name>
+    </Arts_Ateacker>
+
+    <Arts_Breaker>
+        <name>아츠 파괴자</name>
+    </Arts_Breaker>
+
+    <Arts_Defender>
+        <name>아츠 수비자</name>
+    </Arts_Defender>
+
+    <Arts_Blaster>
+        <name>아츠 폭발자</name>
+    </Arts_Blaster>
+
+    <Buffer>
+        <name>강화자</name>
+    </Buffer>
+
+    <Debuffer>
+        <name>약화자</name>
+    </Debuffer>
+
+    <Healer>
+        <name>치료자</name>
+    </Healer>
+
+</categories>

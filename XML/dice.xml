@@ -1,0 +1,37 @@
+<diceRolls>
+    <diceRoll>
+        <name>D2</name>
+        <description>2면 주사위.</description>
+        <maxValue>2</maxValue>
+    </diceRoll>
+    <diceRoll>
+        <name>D4</name>
+        <description>4면 주사위.</description>
+        <maxValue>4</maxValue>
+    </diceRoll>
+    <diceRoll>
+        <name>D6</name>
+        <description>6면 주사위.</description>
+        <maxValue>6</maxValue>
+    </diceRoll>
+    <diceRoll>
+        <name>D8</name>
+        <description>8면 주사위.</description>
+        <maxValue>8</maxValue>
+    </diceRoll>
+    <diceRoll>
+        <name>D10</name>
+        <description>10면 주사위.</description>
+        <maxValue>10</maxValue>
+    </diceRoll>
+    <diceRoll>
+        <name>D20</name>
+        <description>20면 주사위.</description>
+        <maxValue>20</maxValue>
+    </diceRoll>
+    <diceRoll>
+        <name>D100</name>
+        <description>100면 주사위.</description>
+        <maxValue>100</maxValue>
+    </diceRoll>
+</diceRolls>

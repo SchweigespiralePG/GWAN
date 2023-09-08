@@ -1,0 +1,34 @@
+<BasicStats>
+    <Attack>
+        <name>근력(Attack)</name>
+        <description>(STA * D6)*(STB/D2)</description>
+    </Attack>
+    <Con>
+        <name>건강(Constitution)</name>
+        <description>(STA - STB)+7+(3*D6)</description>
+    </Con>
+    <Size>
+        <name>크기(Size)</name>
+        <description>6*D100*(1/STA)</description>
+    </Size>
+    <Edu>
+        <name>지식(Education)</name>
+        <description>(STB*D4)+INT</description>
+    </Edu>
+    <Apd>
+        <name>반응속도(Apd)</name>
+        <description>DEX*(STA+(D2*D8))</description>
+    </Apd>
+    <Dex>
+        <name>속도(Dexterity)</name>
+        <description>(STA+STB)/(2*D6)</description>
+    </Dex>
+    <Int>
+        <name>지혜(Int)</name>
+        <description>(STA*3*D8)-(STB*D2)</description>
+    </Int>
+    <Luck>
+        <name>운(Luck)</name>
+        <description>(STA*2*D12)-(3*D10*STB)</description>
+    </Luck>
+</BasicStats>
