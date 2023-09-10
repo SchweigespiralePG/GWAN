@@ -357,6 +357,7 @@
 "Assets/Script/Book/UIManager.cs"
 "Assets/Script/camera/CameraManager.cs"
 "Assets/Script/Character_Status.cs"
+"Assets/Script/Conversation/ConversationManager.cs"
 "Assets/Script/GameManager/ButtonController.cs"
 "Assets/Script/GameManager/Turn_Battle_Manager.cs"
 "Assets/Script/MapScrpts/HexTile.cs"
