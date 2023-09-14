@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using static Unity.IO.LowLevel.Unsafe.AsyncReadManagerMetrics;
 
 [System.Serializable]
 
@@ -12,6 +13,8 @@ public class Dialogue
     public string dialogue;
     public string Title;
     public Sprite cg;
+    public bool Select;
+
 }
 
 public class ConversationManager : MonoBehaviour
@@ -20,6 +23,7 @@ public class ConversationManager : MonoBehaviour
     [SerializeField] private SpriteRenderer sprite_DialogueBox;
     [SerializeField] private Text text_Dialogue;
     [SerializeField] private Text text_Title;
+    [SerializeField] private GameObject Select_Button;
 
     private int Count = 0;
 
@@ -44,15 +48,26 @@ public class ConversationManager : MonoBehaviour
     {
         OnOff(false);
     }
+
     private void NextDialogue()
     {
         text_Dialogue.text = dialogue[Count].dialogue;
         text_Title.text = dialogue[Count].Title;
         sprite_StandingCG.sprite = dialogue[Count].cg;
+        if (dialogue[Count].Select)
+        {
+            HideDialogus();
+            Select_Button.gameObject.SetActive(true);
+        }
+        else {
+            ShowDialogue();
+            Select_Button.gameObject.SetActive(false);
+        }
         Count += 1;
+        
     }
 
-    private void Update()
+        private void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
