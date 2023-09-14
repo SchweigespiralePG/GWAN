@@ -301,9 +301,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1579785127}
+      - m_Target: {fileID: 1676953808}
         m_TargetAssemblyTypeName: ConversationManager, Assembly-CSharp
         m_MethodName: ShowDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1676953808}
+        m_TargetAssemblyTypeName: ConversationManager, Assembly-CSharp
+        m_MethodName: onChatWindow
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -351,6 +363,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 65657066}
   m_CullTransparentMesh: 1
+--- !u!1 &74791853
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 74791854}
+  m_Layer: 0
+  m_Name: SelectManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &74791854
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74791853}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 94.76918, y: 350.36142, z: -10.276714}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1742381615}
+  - {fileID: 1014161735}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &89744602
 GameObject:
   m_ObjectHideFlags: 0
@@ -911,6 +956,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1001662850}
   m_CullTransparentMesh: 1
+--- !u!1 &1014161734
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1014161735}
+  - component: {fileID: 1014161736}
+  m_Layer: 0
+  m_Name: Select (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1014161735
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014161734}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 74791854}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1014161736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014161734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38cb1badc620dc145a411c0126320b5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite_StandingCG: {fileID: 0}
+  sprite_DialogueBox: {fileID: 0}
+  text_Dialogue: {fileID: 0}
+  text_Title: {fileID: 0}
+  Select_Button: {fileID: 0}
+  dialogue: []
 --- !u!1 &1267352635
 GameObject:
   m_ObjectHideFlags: 0
@@ -1262,7 +1357,55 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1425932580}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1742381616}
+        m_TargetAssemblyTypeName: ConversationManager, Assembly-CSharp
+        m_MethodName: ShowDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1676953808}
+        m_TargetAssemblyTypeName: ConversationManager, Assembly-CSharp
+        m_MethodName: offSelectButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1742381616}
+        m_TargetAssemblyTypeName: ConversationManager, Assembly-CSharp
+        m_MethodName: onChatWindow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1676953808}
+        m_TargetAssemblyTypeName: ConversationManager, Assembly-CSharp
+        m_MethodName: offChatWindow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1425932580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1313,7 +1456,6 @@ GameObject:
   - component: {fileID: 1579785130}
   - component: {fileID: 1579785129}
   - component: {fileID: 1579785128}
-  - component: {fileID: 1579785127}
   m_Layer: 5
   m_Name: Conversation Manager
   m_TagString: Untagged
@@ -1321,36 +1463,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1579785127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1579785126}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38cb1badc620dc145a411c0126320b5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprite_StandingCG: {fileID: 1770162229}
-  sprite_DialogueBox: {fileID: 1367473033}
-  text_Dialogue: {fileID: 1837739078}
-  text_Title: {fileID: 89744604}
-  Select_Button: {fileID: 1617653048}
-  dialogue:
-  - dialogue: "\uC640 \uC0CC\uC988 \uC544\uC2DC\uB294 \uAD6C\uB098"
-    Title: "\uC0CC\uC988"
-    cg: {fileID: 21300000, guid: 72b99380b93074a4ab80f324dbd916d5, type: 3}
-    Select: 0
-  - dialogue: "\uC815\uB9D0 \uC5B4\uB835\uC2B5\uB2C8\uB2E4.\n"
-    Title: "\uD30C\uD53C\uB8E8\uC2A4"
-    cg: {fileID: 0}
-    Select: 0
-  - dialogue: "\uC120\uD0DD\uC9C0"
-    Title: "\uC120\uD0DD\uC9C0"
-    cg: {fileID: 0}
-    Select: 1
 --- !u!114 &1579785128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1618,6 +1730,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1656761613}
   m_CullTransparentMesh: 1
+--- !u!1 &1676953807
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1676953809}
+  - component: {fileID: 1676953808}
+  m_Layer: 0
+  m_Name: chat
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1676953808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676953807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38cb1badc620dc145a411c0126320b5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite_StandingCG: {fileID: 1770162229}
+  sprite_DialogueBox: {fileID: 1367473033}
+  text_Dialogue: {fileID: 1837739078}
+  text_Title: {fileID: 89744604}
+  Select_Button: {fileID: 1617653048}
+  dialogue:
+  - dialogue: "\uC640 \uC0CC\uC988 \uC544\uC2DC\uB294 \uAD6C\uB098"
+    Title: "\uC0CC\uC988"
+    cg: {fileID: 21300000, guid: 72b99380b93074a4ab80f324dbd916d5, type: 3}
+    Select: 0
+  - dialogue: "\uC815\uB9D0 \uC5B4\uB835\uC2B5\uB2C8\uB2E4.\n"
+    Title: "\uD30C\uD53C\uB8E8\uC2A4"
+    cg: {fileID: 0}
+    Select: 0
+  - dialogue: "\uC815\uB9D0 \uC5B4\uB835\uC2B5\uB2C8\uB2E4.\n"
+    Title: "\uD30C\uD53C\uB8E8\uC2A4"
+    cg: {fileID: 0}
+    Select: 1
+--- !u!4 &1676953809
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676953807}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 94.76918, y: 350.36142, z: -10.276714}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1679859470
 GameObject:
   m_ObjectHideFlags: 0
@@ -1686,6 +1860,68 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1742381614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1742381615}
+  - component: {fileID: 1742381616}
+  m_Layer: 0
+  m_Name: Select
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1742381615
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742381614}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 74791854}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1742381616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742381614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38cb1badc620dc145a411c0126320b5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite_StandingCG: {fileID: 1770162229}
+  sprite_DialogueBox: {fileID: 1367473033}
+  text_Dialogue: {fileID: 1837739078}
+  text_Title: {fileID: 89744604}
+  Select_Button: {fileID: 0}
+  dialogue:
+  - dialogue: 12
+    Title: 123
+    cg: {fileID: 0}
+    Select: 0
+  - dialogue: 12
+    Title: 123
+    cg: {fileID: 21300000, guid: 72b99380b93074a4ab80f324dbd916d5, type: 3}
+    Select: 0
+  - dialogue: 12
+    Title: 123
+    cg: {fileID: 0}
+    Select: 0
 --- !u!1 &1755555964
 GameObject:
   m_ObjectHideFlags: 0
