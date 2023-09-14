@@ -73,6 +73,7 @@
     <Compile Include="Assets\Script\Book\Card.cs" />
     <Compile Include="Assets\Script\Menu\M_MenuButtonSystem.cs" />
     <Compile Include="Assets\Script\camera\CameraManager.cs" />
+    <Compile Include="Assets\Script\Conversation\ConversationManager.cs" />
     <Compile Include="Assets\Card\Resources\CardDB\CardDB.cs" />
     <Compile Include="Assets\Script\Book\UIManager.cs" />
     <Compile Include="Assets\Script\Scene Load\LevelLoader.cs" />
