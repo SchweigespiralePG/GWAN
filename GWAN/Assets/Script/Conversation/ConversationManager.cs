@@ -4,29 +4,29 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [System.Serializable]
-// Dialogue Å¬·¡½º´Â ´ëÈ­ÀÇ ³»¿ë, Á¦¸ñ, ÀÌ¹ÌÁö ¹× ¼±ÅÃ ¹öÆ° È°¼ºÈ­ ¿©ºÎ¸¦ Á¤ÀÇÇÕ´Ï´Ù.
+// Dialogue í´ë˜ìŠ¤ëŠ” ëŒ€í™”ì˜ ë‚´ìš©, ì œëª©, ì´ë¯¸ì§€ ë° ì„ íƒ ë²„íŠ¼ í™œì„±í™” ì—¬ë¶€ë¥¼ ì •ì˜í•©ë‹ˆë‹¤.
 public class Dialogue
 {
     [TextArea]
-    public string dialogue; // ´ëÈ­ ³»¿ë
-    public string Title;    // ´ëÈ­ Á¦¸ñ
-    public Sprite cg;       // ´ëÈ­¿¡¼­ »ç¿ëµÇ´Â ½ºÇÁ¶óÀÌÆ® ÀÌ¹ÌÁö
-    public bool Select;     // ¼±ÅÃ ¹öÆ°ÀÇ È°¼ºÈ­ ¿©ºÎ
+    public string dialogue; // ëŒ€í™” ë‚´ìš©
+    public string Title;    // ëŒ€í™” ì œëª©
+    public Sprite cg;       // ëŒ€í™”ì—ì„œ ì‚¬ìš©ë˜ëŠ” ìŠ¤í”„ë¼ì´íŠ¸ ì´ë¯¸ì§€
+    public bool Select;     // ì„ íƒ ë²„íŠ¼ì˜ í™œì„±í™” ì—¬ë¶€
 }
 
 public class ConversationManager : MonoBehaviour
 {
-    [SerializeField] private SpriteRenderer sprite_StandingCG;   // ´ëÈ­ Áß¿¡ Ç¥½ÃµÇ´Â Ä³¸¯ÅÍ ÀÌ¹ÌÁö
-    [SerializeField] private SpriteRenderer sprite_DialogueBox; // ´ëÈ­ »óÀÚ
-    [SerializeField] private Text text_Dialogue;                 // ´ëÈ­ ³»¿ë ÅØ½ºÆ®
-    [SerializeField] private Text text_Title;                    // ´ëÈ­ Á¦¸ñ ÅØ½ºÆ®
-    [SerializeField] private GameObject Select_Button;           // ¼±ÅÃ ¹öÆ°
+    [SerializeField] private SpriteRenderer sprite_StandingCG;   // ëŒ€í™” ì¤‘ì— í‘œì‹œë˜ëŠ” ìºë¦­í„° ì´ë¯¸ì§€
+    [SerializeField] private SpriteRenderer sprite_DialogueBox; // ëŒ€í™” ìƒì
+    [SerializeField] private Text text_Dialogue;                 // ëŒ€í™” ë‚´ìš© í…ìŠ¤íŠ¸
+    [SerializeField] private Text text_Title;                    // ëŒ€í™” ì œëª© í…ìŠ¤íŠ¸
+    [SerializeField] private GameObject Select_Button;           // ì„ íƒ ë²„íŠ¼
 
-    private int Count = 0;  // ÇöÀç ´ëÈ­ÀÇ ÀÎµ¦½º
+    private int Count = 0;  // í˜„ì¬ ëŒ€í™”ì˜ ì¸ë±ìŠ¤
 
-    [SerializeField] private Dialogue[] dialogue; // ´ëÈ­ ¹è¿­
+    [SerializeField] private Dialogue[] dialogue; // ëŒ€í™” ë°°ì—´
 
-    // ´ëÈ­¸¦ È°¼ºÈ­ÇÏ°í Ã¹ ¹øÂ° ´ëÈ­¸¦ ½ÃÀÛÇÕ´Ï´Ù.
+    // ëŒ€í™”ë¥¼ í™œì„±í™”í•˜ê³  ì²« ë²ˆì§¸ ëŒ€í™”ë¥¼ ì‹œì‘í•©ë‹ˆë‹¤.
     public void ShowDialogue()
     {
         OnOff(true);
@@ -34,7 +34,7 @@ public class ConversationManager : MonoBehaviour
         NextDialogue();
     }
 
-    // ´ëÈ­¿Í °ü·ÃµÈ UI ¿ä¼ÒÀÇ È°¼ºÈ­ »óÅÂ¸¦ ¼³Á¤ÇÕ´Ï´Ù.
+    // ëŒ€í™”ì™€ ê´€ë ¨ëœ UI ìš”ì†Œì˜ í™œì„±í™” ìƒíƒœë¥¼ ì„¤ì •í•©ë‹ˆë‹¤.
     private void OnOff(bool _flag)
     {
         sprite_DialogueBox.gameObject.SetActive(_flag);
@@ -43,39 +43,39 @@ public class ConversationManager : MonoBehaviour
         text_Title.gameObject.SetActive(_flag);
     }
 
-    // ´ëÈ­ Ã¢À» ¼û±é´Ï´Ù.
+    // ëŒ€í™” ì°½ì„ ìˆ¨ê¹ë‹ˆë‹¤.
     public void offChatWindow()
     {
         gameObject.SetActive(false);
     }
 
-    // ´ëÈ­ Ã¢À» º¸¿©Áİ´Ï´Ù.
+    // ëŒ€í™” ì°½ì„ ë³´ì—¬ì¤ë‹ˆë‹¤.
     public void onChatWindow()
     {
         gameObject.SetActive(true);
     }
 
-    // ¼±ÅÃ ¹öÆ°À» ¼û±é´Ï´Ù.
+    // ì„ íƒ ë²„íŠ¼ì„ ìˆ¨ê¹ë‹ˆë‹¤.
     public void offSelectButton()
     {
         Select_Button.gameObject.SetActive(false);
     }
 
-    // ¸ğµç ´ëÈ­ UI ¿ä¼Ò¸¦ ¼û±é´Ï´Ù.
+    // ëª¨ë“  ëŒ€í™” UI ìš”ì†Œë¥¼ ìˆ¨ê¹ë‹ˆë‹¤.
     private void HideDialogus()
     {
         OnOff(false);
     }
 
-    // ´ÙÀ½ ´ëÈ­¸¦ Ç¥½ÃÇÕ´Ï´Ù.
+    // ë‹¤ìŒ ëŒ€í™”ë¥¼ í‘œì‹œí•©ë‹ˆë‹¤.
     private void NextDialogue()
     {
-        // ¹è¿­ÀÇ ±æÀÌ¸¦ ÃÊ°úÇÏ¸é ´ëÈ­¸¦ ¼û±é´Ï´Ù.
+        // ë°°ì—´ì˜ ê¸¸ì´ë¥¼ ì´ˆê³¼í•˜ë©´ ëŒ€í™”ë¥¼ ìˆ¨ê¹ë‹ˆë‹¤.
         if (Count >= dialogue.Length)
         {
             HideDialogus();
-            return;
             Count = 0;
+            return;
         }
 
         text_Dialogue.text = dialogue[Count].dialogue;
@@ -90,11 +90,11 @@ public class ConversationManager : MonoBehaviour
         
     }
 
-    // »ç¿ëÀÚÀÇ ¸¶¿ì½º ÀÔ·ÂÀ» °¨ÁöÇÏ¿© ´ÙÀ½ ´ëÈ­¸¦ Ç¥½ÃÇÏ°Å³ª ´ëÈ­¸¦ Á¾·áÇÕ´Ï´Ù.
+    // ì‚¬ìš©ìì˜ ë§ˆìš°ìŠ¤ ì…ë ¥ì„ ê°ì§€í•˜ì—¬ ë‹¤ìŒ ëŒ€í™”ë¥¼ í‘œì‹œí•˜ê±°ë‚˜ ëŒ€í™”ë¥¼ ì¢…ë£Œí•©ë‹ˆë‹¤.
     private void Update()
     {
-        // ´ëÈ­ÀÇ ±æÀÌ ³»¿¡¼­¸¸ NextDialogue ÇÔ¼ö¸¦ È£ÃâÇÕ´Ï´Ù.
-        if (Input.GetMouseButtonDown(0) && Count <= dialogue.Length)
+        // ëŒ€í™”ì˜ ê¸¸ì´ ë‚´ì—ì„œë§Œ NextDialogue í•¨ìˆ˜ë¥¼ í˜¸ì¶œí•©ë‹ˆë‹¤.
+        if (Input.GetMouseButtonDown(0) && sprite_DialogueBox.gameObject.activeSelf)
         {
             NextDialogue();
         }
