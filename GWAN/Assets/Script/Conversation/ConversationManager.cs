@@ -74,7 +74,6 @@ public class ConversationManager : MonoBehaviour
         if (Count >= dialogue.Length)
         {
             HideDialogus();
-            Count = 0;
             return;
         }
 
