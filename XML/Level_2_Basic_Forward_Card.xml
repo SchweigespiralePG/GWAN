@@ -1,0 +1,131 @@
+<Level_2_Basic_Forward_Card>
+    <WoodenShield>
+        <name>허름한 목재 방패</name>
+        <description>사용자의전투능력을 최저로 한정시키기 위해 제작된 훈련용 장비이자, 가장 약하고 가장 물르다</description>
+        <num>0051</num>
+        <count>1</count>
+        <role>Weapon</role>
+        <rate>2</rate>
+        <ReverseForward>순전</ReverseForward>
+        <Extinction>True</Extinction>
+        <bearer>Player</bearer>
+        <AcquisitionDifficulty>baisic</AcquisitionDifficulty>
+    </WoodenShield>
+
+    <WoodenBow>
+        <name>허름한 목재 화살과 활</name>
+        <description>사용자의전투능력을 최저로 한정시키기 위해 제작된 훈련용 장비이자, 가장 약하고 가장 물르다</description>
+        <num>0052</num>
+        <count>2</count>
+        <role>Weapon</role>
+        <rate>2</rate>
+        <ReverseForward>순전</ReverseForward>
+        <Extinction>True</Extinction>
+        <bearer>Player</bearer>
+        <AcquisitionDifficulty>baisic</AcquisitionDifficulty>
+    </WoodenBow>
+
+    <WoodenSpear>
+        <name>허름한 목재 창</name>
+        <description>사용자의전투능력을 최저로 한정시키기 위해 제작된 훈련용 장비이자, 가장 약하고 가장 물르다</description>
+        <num>0053</num>
+        <count>3</count>
+        <role>Weapon</role>
+        <rate>2</rate>
+        <ReverseForward>순전</ReverseForward>
+        <Extinction>True</Extinction>
+        <bearer>Player</bearer>
+        <AcquisitionDifficulty>baisic</AcquisitionDifficulty>
+    </WoodenSpear>
+
+    <WoodenAxe>
+        <name>허름한 목제 도끼</name>
+        <description>사용자의전투능력을 최저로 한정시키기 위해 제작된 훈련용 장비이자, 가장 약하고 가장 물르다</description>
+        <num>0054</num>
+        <count>4</count>
+        <role>Weapon</role>
+        <rate>2</rate>
+        <ReverseForward>순전</ReverseForward>
+        <Extinction>True</Extinction>
+        <bearer>Player</bearer>
+        <AcquisitionDifficulty>baisic</AcquisitionDifficulty>
+    </WoodenAxe>
+
+    <WoodenSword>
+        <name>허름한 목제 검</name>
+        <description>사용자의전투능력을 최저로 한정시키기 위해 제작된 훈련용 장비이자, 가장 약하고 가장 물르다</description>
+        <num>0055</num>
+        <count>5</count>
+        <role>Weapon</role>
+        <rate>2</rate>
+        <ReverseForward>순전</ReverseForward>
+        <Extinction>True</Extinction>
+        <bearer>Player</bearer>
+        <AcquisitionDifficulty>baisic</AcquisitionDifficulty>
+    </WoodenSword>
+
+    <WoodenClub>
+        <name>허름한 목제 곤봉</name>
+        <description>사용자의전투능력을 최저로 한정시키기 위해 제작된 훈련용 장비이자, 가장 약하고 가장 물르다</description>
+        <num>0056</num>
+        <count>6</count>
+        <role>Weapon</role>
+        <rate>2</rate>
+        <ReverseForward>순전</ReverseForward>
+        <Extinction>True</Extinction>
+        <bearer>Player</bearer>
+        <AcquisitionDifficulty>baisic</AcquisitionDifficulty>
+    </WoodenClub>
+
+    <CommonCaltalist>
+        <name>저급한 촉매</name>
+        <description>사용자의전투능력을 최저로 한정시키기 위해 제작된 훈련용 장비이자, 가장 약하고 가장 물르다</description>
+        <num>7</num>
+        <count>0057</count>
+        <role>Weapon</role>
+        <rate>2</rate>
+        <ReverseForward>순전</ReverseForward>
+        <Extinction>True</Extinction>
+        <bearer>Player</bearer>
+        <AcquisitionDifficulty>baisic</AcquisitionDifficulty>
+    </CommonCaltalist>
+
+    <LeatheGauntlets>
+        <name>허름한 가죽 건틀릿</name>
+        <description>사용자의전투능력을 최저로 한정시키기 위해 제작된 훈련용 장비이자, 가장 약하고 가장 물르다</description>
+        <num>0058</num>
+        <count>8</count>
+        <role>Weapon</role>
+        <rate>2</rate>
+        <ReverseForward>순전</ReverseForward>
+        <Extinction>True</Extinction>
+        <bearer>Player</bearer>
+        <AcquisitionDifficulty>baisic</AcquisitionDifficulty>
+    </LeatheGauntlets>
+
+    <CommonString>
+        <name>허름한 무명실</name>
+        <description>사용자의전투능력을 최저로 한정시키기 위해 제작된 훈련용 장비이자, 가장 약하고 가장 물르다</description>
+        <num>0059</num>
+        <count>9</count>
+        <role>Weapon</role>
+        <rate>2</rate>
+        <ReverseForward>순전</ReverseForward>
+        <Extinction>True</Extinction>
+        <bearer>Player</bearer>
+        <AcquisitionDifficulty>baisic</AcquisitionDifficulty>
+    </CommonString>
+
+    <TrainingStaff>
+        <name>값싼 연습용 지팡이</name>
+        <description>사용자의전투능력을 최저로 한정시키기 위해 제작된 훈련용 장비이자, 가장 약하고 가장 물르다</description>
+        <num>0060</num>
+        <count>10</count>
+        <role>Weapon</role>
+        <rate>2</rate>
+        <ReverseForward>순전</ReverseForward>
+        <Extinction>True</Extinction>
+        <bearer>Player</bearer>
+        <AcquisitionDifficulty>baisic</AcquisitionDifficulty>
+    </TrainingStaff>
+</Level_2_Basic_Forward_Card>
