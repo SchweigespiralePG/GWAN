@@ -1,8 +1,8 @@
 <BasicStats>
-    <Attack>
-        <name>근력(Attack)</name>
+    <Str>
+        <name>근력(Str)</name>
         <description>(STA * D6)*(STB/D2)</description>
-    </Attack>
+    </Str>
     <Con>
         <name>건강(Constitution)</name>
         <description>(STA - STB)+7+(3*D6)</description>
@@ -13,11 +13,11 @@
     </Size>
     <Edu>
         <name>지식(Education)</name>
-        <description>(STB*D4)+INT</description>
+        <description>(STB*D4)+Int</description>
     </Edu>
     <Apd>
         <name>반응속도(Apd)</name>
-        <description>DEX*(STA+(D2*D8))</description>
+        <description>Dex*(STA+(D2*D8))</description>
     </Apd>
     <Dex>
         <name>속도(Dexterity)</name>
@@ -31,4 +31,20 @@
         <name>운(Luck)</name>
         <description>(STA*2*D12)-(3*D10*STB)</description>
     </Luck>
+    <Hp>
+        <name>생명계수(HP)</name>
+        <description>(STA * D6)*(STB/D2)*con</description>
+    </Hp>
+    <Dp>
+        <name>방어력(DP)</name>
+        <description>(STA - STB)+(3*D6)</description>
+    </Dp>
+    <Atk>
+        <name>공격력(Atk)</name>
+        <description>6*D100*(1/STA)*Str</description>
+    </Atk>
+    <AP>
+        <name>마법저항력(AP)</name>
+        <description>(STB*D4)+Int</description>
+    </AP>
 </BasicStats>
