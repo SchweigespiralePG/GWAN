@@ -57,14 +57,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\Book\Book.cs" />
-    <Compile Include="Assets\Script\MapScrpts\PlayerHexTile.cs" />
+    <Compile Include="Assets\Script\MapScrpts\Map\PlayerHexTile.cs" />
     <Compile Include="Assets\Script\GameManager\Turn_Battle_Manager.cs" />
     <Compile Include="Assets\Script\Book\Page.cs" />
     <Compile Include="Assets\Script\AttackScript.cs" />
     <Compile Include="Assets\Script\Vertex\VertexLoader.cs" />
     <Compile Include="Assets\Script\Character_Status.cs" />
     <Compile Include="Assets\Script\Menu\SettingsMenu.cs" />
-    <Compile Include="Assets\Script\MapScrpts\HexTile.cs" />
+    <Compile Include="Assets\Script\MapScrpts\Map\HexTile.cs" />
     <Compile Include="Assets\Script\Book\BookManager.cs" />
     <Compile Include="Assets\Script\Book\CardUI.cs" />
     <Compile Include="Assets\Script\Vertex\FixedVertex.cs" />
@@ -78,7 +78,8 @@
     <Compile Include="Assets\Script\Book\UIManager.cs" />
     <Compile Include="Assets\Script\Scene Load\LevelLoader.cs" />
     <Compile Include="Assets\Script\Book\CardSlotGridManager.cs" />
-    <Compile Include="Assets\Script\MapScrpts\PlayerMove.cs" />
+    <Compile Include="Assets\Script\MapScrpts\Move\PlayerMove.cs" />
+    <Compile Include="Assets\Script\MapScrpts\Event\EventProcessor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

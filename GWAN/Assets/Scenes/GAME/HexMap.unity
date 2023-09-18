@@ -494,6 +494,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: (16X16)HexTile
       objectReference: {fileID: 0}
+    - target: {fileID: 2157095766032155339, guid: 97e90bdcb21e8d541a90971c5de4b067, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 41b2f5c4216ee0344a31361edbf9394c, type: 2}
     - target: {fileID: 3392903262120425596, guid: 97e90bdcb21e8d541a90971c5de4b067, type: 3}
       propertyPath: m_RootOrder
       value: 5
