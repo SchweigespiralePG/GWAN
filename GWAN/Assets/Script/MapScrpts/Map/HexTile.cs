@@ -32,6 +32,6 @@ public enum HexType{
     Default,
     Battle,
     DiscoveryEvent,
-    MeetingEvent,
+    ConversationEvent,
 
 }

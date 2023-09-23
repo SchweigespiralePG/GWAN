@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class PlayerMove : MonoBehaviour
 {
@@ -34,28 +35,25 @@ public class PlayerMove : MonoBehaviour
     private PlayerHexTile playerHexTile;
 
 
-    private EventProcessor eventProcessor;
 
     private void Start()
     {
         // 시작 시 PlayerHexTile 컴포넌트를 가져옴
         playerHexTile = GetComponent<PlayerHexTile>();
-        // EventProcessor 인스턴스 찾기
-        eventProcessor = FindObjectOfType<EventProcessor>();
     }
 
-    void Update()
+    private void Update()
     {
         // 마우스 클릭 감지와 딜레이 체크
         if (Input.GetMouseButton(0) && Time.time - lastClickTime >= clickDelay)
         {
             lastClickTime = Time.time;
             PerformRaycast();
+            EventHexTile();
         }
 
         // 플레이어 이동 처리
         MovePlayer();
-        EventHexTile();
     }
 
     // 마우스 클릭 위치에 Ray를 발사하여 타겟 위치를 감지하는 메서드
@@ -79,6 +77,7 @@ public class PlayerMove : MonoBehaviour
             // 이동할 타겟 위치가 현재 위치와 인접한지 체크
             if (Mathf.Abs(x - NextX) <= 1 && Mathf.Abs(y - NextY) <= 1 && Mathf.Abs(z - NextZ) <= 1)
             {
+                Debug.Log((x - NextX) + "," + (z - NextZ));
                 isMoving = true;
                 isEvent = true;
             }
@@ -133,13 +132,73 @@ public class PlayerMove : MonoBehaviour
             {
                 // 닿은 객체가 HexTile 컴포넌트를 가지고 있는지 확인
                 HexTile hexTile = hit.transform.GetComponent<HexTile>();
-                if (hexTile != null)
+                if (hexTile != null && hexTile.visited)
                 {
-                    // 닿은 HexTile을 사용하여 이벤트 실행
-                    //eventProcessor.ExecuteTileEvent(hexTile);
+                    // 닿은 HexTile에서 HexType 가져오기
+                    HexType type = hexTile.hexType;
                     isEvent = false;
+                    hexTile.visited = false;
+
+                    switch (type)
+                    {
+                        case HexType.None:
+                            break;
+                        case HexType.Default:
+                            break;
+                        case HexType.DiscoveryEvent:
+                            IsDiscoveryEvent(hit);
+                            break;
+                        case HexType.Battle:
+                            IsBattle(hit);
+                            break;
+                        case HexType.ConversationEvent:
+                            IsConversationEvent(hit);
+                            break;
+                    }
                 }
             }
         }
     }
+
+
+    private void IsBattle(RaycastHit hit)
+    {
+        StartCoroutine(IsBattleWithDelay(hit));
+    }
+    private IEnumerator IsBattleWithDelay(RaycastHit hit)
+    {
+        yield return new WaitForSeconds(0.2f); // 0.2초 딜레이
+
+        /*ConversationEvent conversationEvent = hit.transform.GetComponent<ConversationEvent>();
+        conversationEvent.CallShowDialogue();
+        gameObject.SetActive(false);*/
+    }
+
+    private void IsDiscoveryEvent(RaycastHit hit)
+    {
+        StartCoroutine(IsDiscoveryEventWithDelay(hit));
+    }
+    private IEnumerator IsDiscoveryEventWithDelay(RaycastHit hit)
+    {
+        yield return new WaitForSeconds(0.2f); // 0.2초 딜레이
+
+        /*ConversationEvent conversationEvent = hit.transform.GetComponent<ConversationEvent>();
+        conversationEvent.CallShowDialogue();
+        gameObject.SetActive(false);*/
+    }
+
+    private void IsConversationEvent(RaycastHit hit)
+    {
+        StartCoroutine(ConversationEventWithDelay(hit));
+    }
+    private IEnumerator ConversationEventWithDelay(RaycastHit hit)
+    {
+        yield return new WaitForSeconds(0.2f); // 0.2초 딜레이
+
+        ConversationEvent conversationEvent = hit.transform.GetComponent<ConversationEvent>();
+        conversationEvent.CallShowDialogue();
+        gameObject.SetActive(false);
+    }
+
+
 }

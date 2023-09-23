@@ -12,10 +12,12 @@ public class Dialogue
     public string Title;    // 대화 제목
     public Sprite cg;       // 대화에서 사용되는 스프라이트 이미지
     public bool Select;     // 선택 버튼의 활성화 여부
+    public bool Restart;     // 행동재시작 활성화 여부
 }
 
 public class ConversationManager : MonoBehaviour
 {
+    public GameObject RestartObject;
     [SerializeField] private SpriteRenderer sprite_StandingCG;   // 대화 중에 표시되는 캐릭터 이미지
     [SerializeField] private SpriteRenderer sprite_DialogueBox; // 대화 상자
     [SerializeField] private Text text_Dialogue;                 // 대화 내용 텍스트
@@ -83,6 +85,11 @@ public class ConversationManager : MonoBehaviour
         if (dialogue[Count].Select)
         {
             Select_Button.gameObject.SetActive(true);
+            HideDialogus();
+        }
+        if (dialogue[Count].Restart)
+        {
+            RestartObject.SetActive(true);
             HideDialogus();
         }
         Count += 1;
