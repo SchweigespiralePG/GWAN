@@ -14,8 +14,8 @@ public class PlayerHexTile : MonoBehaviour
 
     public void CalculateCoordinates()
     {
-        x = Mathf.CeilToInt(transform.position.x / xOffset);
-        y = Mathf.RoundToInt(transform.position.y / yOffset);
-        z = Mathf.RoundToInt(transform.position.z / zOffset);
+        Vector2Int gridPosition = HexGridUtility.CalculateGridPosition(transform.position);
+        x = gridPosition.x;
+        z = gridPosition.y;
     }
 }

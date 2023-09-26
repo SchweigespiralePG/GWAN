@@ -1,10 +1,11 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UIElements;
 
 public class PlayerMove : MonoBehaviour
 {
     // 좌표 오프셋 값
-    public static float xOffset = 1, yOffset = 1, zOffset = 0.85f;
+    public static float xOffset = 1.7f, yOffset = 1.0f, zOffset = 1.5f;
 
     // 플레이어의 이동 속도
     [SerializeField]
@@ -67,24 +68,55 @@ public class PlayerMove : MonoBehaviour
             // 좌표 계산
             playerHexTile.CalculateCoordinates();
             int x = playerHexTile.x;
-            int y = playerHexTile.y;
             int z = playerHexTile.z;
+
+            Debug.Log(hit);
             targetPosition = hit.transform.position;
-            int NextX = Mathf.CeilToInt(targetPosition.x / xOffset);
-            int NextY = Mathf.RoundToInt(targetPosition.y / yOffset);
-            int NextZ = Mathf.RoundToInt(targetPosition.z / zOffset);
+            Vector2Int targetGridPos = HexGridUtility.CalculateGridPosition(hit.transform.position);
+            int NextX = targetGridPos.x;
+            int NextZ = targetGridPos.y;
 
             // 이동할 타겟 위치가 현재 위치와 인접한지 체크
-            if (Mathf.Abs(x - NextX) <= 1 && Mathf.Abs(y - NextY) <= 1 && Mathf.Abs(z - NextZ) <= 1)
+            Debug.Log(x+","+z);
+            Debug.Log(NextX + "," + NextZ);
+
+            HexTile hexTile = hit.transform.GetComponent<HexTile>();
+            HexType type = hexTile.hexType;
+            if (type != HexType.None && Mathf.Abs(x - NextX) <= 1 && Mathf.Abs(z - NextZ) <= 1)
             {
-                Debug.Log((x - NextX) + "," + (z - NextZ));
-                isMoving = true;
-                isEvent = true;
+                if (z % 2 == 0)
+                {
+                    Debug.Log((x - NextX) + "," + (z - NextZ));
+                    if ((x - NextX == -1 && z - NextZ == 0) || (x - NextX != -1 && z - NextZ != -1) || (x - NextX != -1 && z - NextZ != 1))
+                    {
+                        Debug.Log((x - NextX) + "," + (z - NextZ));
+                        isMoving = true;
+                        isEvent = true;
+                    }
+                    else
+                    {
+                        isMoving = false;
+                        isEvent = false;
+                    }
+                }
+                else
+                {
+                    if ((x - NextX == 1 && z - NextZ == 0) || (x - NextX != 1 && z - NextZ != -1) || (x - NextX != 1 && z - NextZ != 1))
+                    {
+                        Debug.Log((x - NextX) + "," + (z - NextZ));
+                        isMoving = true;
+                        isEvent = true;
+                    }
+                    else
+                    {
+                        isMoving = false;
+                        isEvent = false;
+                    }
+                }
             }
             else
             {
-                isMoving = false;
-                isEvent = false;
+                Debug.Log("이동불가타일");
             }
         }
     }
@@ -146,10 +178,10 @@ public class PlayerMove : MonoBehaviour
                         case HexType.Default:
                             break;
                         case HexType.DiscoveryEvent:
-                            IsDiscoveryEvent(hit);
+                            //IsDiscoveryEvent(hit);
                             break;
                         case HexType.Battle:
-                            IsBattle(hit);
+                            //IsBattle(hit);
                             break;
                         case HexType.ConversationEvent:
                             IsConversationEvent(hit);
@@ -159,9 +191,9 @@ public class PlayerMove : MonoBehaviour
             }
         }
     }
+    
 
-
-    private void IsBattle(RaycastHit hit)
+    /*private void IsBattle(RaycastHit hit)
     {
         StartCoroutine(IsBattleWithDelay(hit));
     }
@@ -169,12 +201,12 @@ public class PlayerMove : MonoBehaviour
     {
         yield return new WaitForSeconds(0.2f); // 0.2초 딜레이
 
-        /*ConversationEvent conversationEvent = hit.transform.GetComponent<ConversationEvent>();
+        ConversationEvent conversationEvent = hit.transform.GetComponent<ConversationEvent>();
         conversationEvent.CallShowDialogue();
-        gameObject.SetActive(false);*/
-    }
+        gameObject.SetActive(false);
+    }*/
 
-    private void IsDiscoveryEvent(RaycastHit hit)
+    /*private void IsDiscoveryEvent(RaycastHit hit)
     {
         StartCoroutine(IsDiscoveryEventWithDelay(hit));
     }
@@ -182,10 +214,10 @@ public class PlayerMove : MonoBehaviour
     {
         yield return new WaitForSeconds(0.2f); // 0.2초 딜레이
 
-        /*ConversationEvent conversationEvent = hit.transform.GetComponent<ConversationEvent>();
+        ConversationEvent conversationEvent = hit.transform.GetComponent<ConversationEvent>();
         conversationEvent.CallShowDialogue();
-        gameObject.SetActive(false);*/
-    }
+        gameObject.SetActive(false);
+    }*/
 
     private void IsConversationEvent(RaycastHit hit)
     {

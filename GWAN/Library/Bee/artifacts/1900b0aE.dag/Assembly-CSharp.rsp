@@ -369,6 +369,7 @@
 "Assets/Script/MapScrpts/Map/HexTile.cs"
 "Assets/Script/MapScrpts/Map/PlayerHexTile.cs"
 "Assets/Script/MapScrpts/Move/PlayerMove.cs"
+"Assets/Script/MapScrpts/Utillty/HexGridUtility.cs"
 "Assets/Script/MapScrpts/Viewer/HexatileViewer.cs"
 "Assets/Script/Menu/M_MenuButtonSystem.cs"
 "Assets/Script/Menu/SettingsMenu.cs"

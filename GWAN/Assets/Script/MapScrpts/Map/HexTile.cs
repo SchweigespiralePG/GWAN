@@ -1,37 +1,29 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.UIElements;
 
-public class HexTile: MonoBehaviour
+public class HexTile : MonoBehaviour
 {
-    public static float xOffset = 1, yOffset = 1, zOffset = 0.85f;
+    public static float xOffset = 1.7f, zOffset = 1.5f;
+    public int x, y, z;
 
     [SerializeField]
     public HexType hexType;
 
-    public int x,y,z;
-
-    //이벤트 타일 방문 여부
     public bool visited = true;
 
-    //타일 좌표
-    private void Awake()
+    public void Awake()
     {
-        x = Mathf.CeilToInt(transform.position.x / xOffset);
-        y = Mathf.RoundToInt(transform.position.y / yOffset);
-        z = Mathf.RoundToInt(transform.position.z / zOffset);
+        Vector2Int gridPosition = HexGridUtility.CalculateGridPosition(transform.position);
+        x = gridPosition.x;
+        z = gridPosition.y;
     }
-
 }
 
 //타일 종류
-public enum HexType{
+public enum HexType
+{
     None,
     Default,
     Battle,
     DiscoveryEvent,
     ConversationEvent,
-
 }
