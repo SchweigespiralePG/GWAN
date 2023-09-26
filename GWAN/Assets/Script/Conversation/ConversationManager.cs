@@ -10,13 +10,17 @@ public class Dialogue
     [TextArea]
     public string dialogue; // 대화 내용
     public string Title;    // 대화 제목
-    public Sprite cg;       // 대화에서 사용되는 스프라이트 이미지
+    public Sprite Rcg;       // 대화에서 사용되는 스프라이트 이미지
+    public Sprite Lcg;       // 대화에서 사용되는 스프라이트 이미지
     public bool Select;     // 선택 버튼의 활성화 여부
+    public bool Restart;     // 행동재시작 활성화 여부
 }
 
 public class ConversationManager : MonoBehaviour
 {
-    [SerializeField] private SpriteRenderer sprite_StandingCG;   // 대화 중에 표시되는 캐릭터 이미지
+    public GameObject RestartObject;
+    [SerializeField] private SpriteRenderer Right_sprite_StandingCG;   // 대화 중에 표시되는 캐릭터 이미지
+    [SerializeField] private SpriteRenderer Left_sprite_StandingCG;   // 대화 중에 표시되는 캐릭터 이미지
     [SerializeField] private SpriteRenderer sprite_DialogueBox; // 대화 상자
     [SerializeField] private Text text_Dialogue;                 // 대화 내용 텍스트
     [SerializeField] private Text text_Title;                    // 대화 제목 텍스트
@@ -38,7 +42,8 @@ public class ConversationManager : MonoBehaviour
     private void OnOff(bool _flag)
     {
         sprite_DialogueBox.gameObject.SetActive(_flag);
-        sprite_StandingCG.gameObject.SetActive(_flag);
+        Right_sprite_StandingCG.gameObject.SetActive(_flag);
+        Left_sprite_StandingCG.gameObject.SetActive(_flag);
         text_Dialogue.gameObject.SetActive(_flag);
         text_Title.gameObject.SetActive(_flag);
     }
@@ -79,10 +84,16 @@ public class ConversationManager : MonoBehaviour
 
         text_Dialogue.text = dialogue[Count].dialogue;
         text_Title.text = dialogue[Count].Title;
-        sprite_StandingCG.sprite = dialogue[Count].cg;
+        Right_sprite_StandingCG.sprite = dialogue[Count].Rcg;
+        Left_sprite_StandingCG.sprite = dialogue[Count].Lcg;
         if (dialogue[Count].Select)
         {
             Select_Button.gameObject.SetActive(true);
+            HideDialogus();
+        }
+        if (dialogue[Count].Restart)
+        {
+            RestartObject.SetActive(true);
             HideDialogus();
         }
         Count += 1;

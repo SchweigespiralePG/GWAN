@@ -57,18 +57,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\Book\Book.cs" />
-    <Compile Include="Assets\Script\MapScrpts\PlayerHexTile.cs" />
+    <Compile Include="Assets\Script\MapScrpts\Map\PlayerHexTile.cs" />
     <Compile Include="Assets\Script\GameManager\Turn_Battle_Manager.cs" />
+    <Compile Include="Assets\Script\MapScrpts\Event\DiscoveryEvent.cs" />
     <Compile Include="Assets\Script\Book\Page.cs" />
     <Compile Include="Assets\Script\AttackScript.cs" />
+    <Compile Include="Assets\Script\MapScrpts\Utillty\HexGridUtility.cs" />
     <Compile Include="Assets\Script\Vertex\VertexLoader.cs" />
     <Compile Include="Assets\Script\Character_Status.cs" />
     <Compile Include="Assets\Script\Menu\SettingsMenu.cs" />
-    <Compile Include="Assets\Script\MapScrpts\HexTile.cs" />
+    <Compile Include="Assets\Script\MapScrpts\Map\HexTile.cs" />
     <Compile Include="Assets\Script\Book\BookManager.cs" />
+    <Compile Include="Assets\Script\MapScrpts\Event\ConversationEvent.cs" />
     <Compile Include="Assets\Script\Book\CardUI.cs" />
     <Compile Include="Assets\Script\Vertex\FixedVertex.cs" />
     <Compile Include="Assets\Script\GameManager\ButtonController.cs" />
+    <Compile Include="Assets\Script\MapScrpts\Viewer\HexatileViewer.cs" />
     <Compile Include="Assets\Script\Book\CardSlot.cs" />
     <Compile Include="Assets\Script\Book\Card.cs" />
     <Compile Include="Assets\Script\Menu\M_MenuButtonSystem.cs" />
@@ -78,7 +82,8 @@
     <Compile Include="Assets\Script\Book\UIManager.cs" />
     <Compile Include="Assets\Script\Scene Load\LevelLoader.cs" />
     <Compile Include="Assets\Script\Book\CardSlotGridManager.cs" />
-    <Compile Include="Assets\Script\MapScrpts\PlayerMove.cs" />
+    <Compile Include="Assets\Script\MapScrpts\Event\BattleEvent.cs" />
+    <Compile Include="Assets\Script\MapScrpts\Move\PlayerMove.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -725,8 +730,14 @@
     <Reference Include="Unity.VisualScripting.Flow.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Tilemap.Extras">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Tilemap.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
@@ -781,6 +792,9 @@
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Tilemap.Extras.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
