@@ -1,0 +1,47 @@
+<orientations>
+
+    <order_justice>
+        <name>질서・선</name>
+    </order_justice>
+
+    <neutrality_justice>
+        <name>중립・선</name>
+    </neutrality_justice>
+
+    <chaos_justice>
+        <name>혼돈・선</name>
+    </chaos_justice>
+
+    <order_neutrality>
+        <name>질서・중립</name>
+    </order_neutrality>
+
+    <neutrality>
+        <name>중립</name>
+    </neutrality>
+
+    <chaos_neutrality>
+        <name>혼돈・중립</name>
+    </chaos_neutrality>
+
+    <order_evil>
+        <name>질서・악</name>
+    </order_evil>
+
+    <neutrality_evil>
+        <name>중립・악</name>
+    </neutrality_evil>
+
+    <chaos_evil>
+        <name>혼돈・악</name>
+    </chaos_evil>
+
+    <madness>
+        <name>광</name>
+    </madness>
+
+    <freedom>
+        <name>자유</name>
+    </freedom>
+
+</orientations>

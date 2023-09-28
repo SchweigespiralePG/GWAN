@@ -1,0 +1,116 @@
+<Species>
+    <Ancients>
+        <name>에인션츠(Ancients)</name>
+        <description>지구의 인간과 유사한 외형, 신체능력으로 글리제 전 지역에 골고루 퍼져있는 희귀 종족이다.</description>
+        <STA>5</STA>
+        <STB>1</STB>
+        <Card>A</Card>
+    </Ancients>
+    <Thalia>
+        <name>탈리아(Thalia)</name>
+        <description> 에인션츠 및 모든 종족의 사회적, 종족적 상위 적 개념(개념적 고대 회귀)어원은 그리서에서 번영을 의미하는 ‘탈리아’(Θάλεια)이다.</description>
+        <STA>STA * 2></STA>
+        <STB>STB *2></STB>
+        <Card> N/A</Card>
+    </Thalia>
+    <Behemoth>
+        <name>베헤모스(Behemoth)</name>
+        <description>드라군과 같은 시대를 겪었다고 전해져 내려오는 신적 존재, 헬렌과 다이애나과 같은 신의 파편인데, 신의 파편인 이들은 놀랍게도 감염도 0%에 수렴하는데도 아츠를 구사할 수 있다고 한다.</description>
+        <STA>STA *2</STA> 
+        <STB>STB *2</STB>
+        <Card>N/A</Card>
+    </Behemoth>
+    <Sarag>
+        <name>사라그(Sarag)</name>
+        <description>악마 족. 뿔을 가졌지만 드라군과는 또 다른 존재, 마족. 어원은 히브리어로 '비꼼, 조롱, 풍자'를 뜻하는 '사르카즘'(סרקזם)과’라그’(לעג )이다.</description>
+        <STA>8.75</STA>
+        <STB>3</STB>
+        <Card>2</Card>
+    </Sarag>
+    <Sankta>
+        <name>산크타(Sankta)</name>
+        <description>천사족. 어원은 에스페란토어로 '성자'(Sankta). 사라그와 잦은 전쟁을 일으키며 선주의 잠적 이후 점점 힘을 잃어가는 사라그와는 달리 교황과 종교로 주권을 뚜렷이 잡으며 아나톨리아 문명의 일축으로 당당하게 자리매김해왔다.</description>
+        <STA>8.75</STA>
+        <STB>3</STB>
+        <Card>3</Card>
+    </Sankta>
+    <Ymir>
+        <name>이미르(Ymir)</name>
+        <description>어원은 쌍둥이(Ymir)를 의미하는 고대 노르드어에서 인용하여 물과 함께하는 생활을 기본으로 하는 종족인 이미르가 쌍둥이 형제만큼이나 중요하게 여간다는 암시.</description>
+        <STA>8.75</STA>
+        <STB>3</STB>
+        <Card>4</Card>
+    </Ymir>
+    <Ryu>
+        <name>용(Ryu)</name>
+        <description>드라군의 특징중 하나인 막대한 양의 마력을 그대로 물려받았으며 이를 드라군의 경지(탈리아화)하지 못한 상태에서 다뤄내기 위해 그들만의 특유의 훈련방식을 만들었다.</description>
+        <STA>8.75</STA>
+        <STB>2</STB>
+        <Card>5</Card>
+    </Ryu>
+    <Wyvern>
+        <name>와이번(Wyvern)</name>
+        <description>드라군 직계 중 하나로 마력과 신체의 굳건함이 드라군 비해 조금 떨어지지만 그대로 3종족 중에서 가장 드라군 본연의 성질을 유지하고 있다.</description>
+        <STA>8.75</STA>
+        <STB>2</STB>
+        <Card>6</Card>
+    </Wyvern>
+    <Addax>
+        <name>아닥스(Addax)</name>
+        <description> 뿔을 가진 지상 생물, 드라군에서 파생된 가장 이질적인 변종 드라군으로서의 대부분의 특징을 잃어버린 불명예에다가, 따라서 아우텀 안에서 아닥스에 대한 차별이 굉장히 심하다고 하며, 또한 날개를 잃어버린 이들이 나비안과 어울리고자 하면 그들에게서도 경멸 받는다고 한다.</description>
+        <STA>5</STA>
+        <STB>1.25</STB>
+        <Card>7</Card>
+    </Addax>
+    <Aslan>
+        <name>아슬란(Aslan)</name>
+        <description>사자족. 어원은 튀르키에어로 사자(Aslan).</description>
+        <STA>6.5</STA>
+        <STB>1.5</STB>
+        <Card>8.</Card>
+    </Aslan>
+    <Billeen>
+        <name>필라인(Billeen)</name>
+        <description>고양이족 어원은 힌디어로 고양이(बिल्ली: billee)에서 음을 파생시켜 필라인이라고 부른다.</description>
+        <STA>6</STA>
+        <STB>1.3</STB>
+        <Card>9</Card>
+    </Billeen>
+    <Lupelt>
+        <name>루펠트(Lupelt)</name>
+        <description>개 족. 어원은 라틴어로 늑대(lupus)를 인용 필라인과는 달리 아슬란의 영역확장의 과정중 북방에서 만나 충성을 맹세한 종족</description>
+        <STA>6</STA>
+        <STB>1.3</STB>
+        <Card>10</Card>
+    </Lupelt>
+    <Liberia>
+        <name>라이베리아(Liberia)</name>
+        <description>조류 족. 어원은 라틴어로 '자유'(Liberi). 현실의 조류에 그리폰, 히포그리프와 같은 환수도 포함하기에 지칭 범위가 필라인만큼 넓다.</description>
+        <STA>5</STA>
+        <STB>1.5</STB>
+        <Card>J</Card>
+    </Liberia>
+    <Navian>
+        <name>나비안(Navian)</name>
+        <description>나머지 지상 동물을 모티브로 한 종족 곰 족, 토끼 족, 파충류 족, 소 동물 족</description>
+        <STA>5</STA>
+        <STB>1.3</STB>
+        <Card>Q</Card>
+    </Navian>
+    <Dwebreg>
+        <name>드붸르그(Dwebreg)</name>
+        <description></description>
+        <STA>3.75</STA>
+        <STB>0.7</STB>
+        <Card>K</Card>
+    </Dwebreg>
+    <Genomoff>
+        <name>제노모프(Genomoff)</name>
+        <description></description>
+        <STA>10</STA>
+        <STB>0.25</STB>
+        <Card>Black_Joker</Card>
+    </Genomoff>
+
+
+</Species>
