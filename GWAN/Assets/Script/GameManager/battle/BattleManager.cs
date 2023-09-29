@@ -7,6 +7,8 @@ public class BattleManager : MonoBehaviour
     public Stat Player; // 플레이어 스탯을 연결할 변수
     public Stat Enemy;  // 적 스탯을 연결할 변수
 
+    public TurnManager turnManager;
+
     void Start()
     {
         // 이제 Player와 Enemy 변수를 통해 스탯에 접근할 수 있습니다.
@@ -14,6 +16,13 @@ public class BattleManager : MonoBehaviour
         Debug.Log("적의 체력: " + Enemy.hp);
     }
 
+    public void IsDead(Stat TargetStat)
+    {
+        if (TargetStat.rHp <= 0)
+        {
+            TargetStat.Dead = true;
+        }
+    }
 
     public void PlayerAttack()
     {
@@ -21,12 +30,17 @@ public class BattleManager : MonoBehaviour
         int enemtDf = Enemy.apd;
         
         Enemy.rHp -= (playerDamage - enemtDf);
+        turnManager.OnNextPhaseButtonClicked();
+        IsDead(Enemy);
     }
-    
-    public void IsDead(Stat TargetStat)
+
+    public void EnemyAttack()
     {
-        if (TargetStat.rHp <= 0) { 
-            TargetStat.Dead = true;
-        }
+        int enemtDamage = Enemy.str + Enemy.atk;
+        int playerDf = Player.apd;
+
+        Player.rHp -= (enemtDamage - playerDf);
+
+        IsDead(Player);
     }
 }

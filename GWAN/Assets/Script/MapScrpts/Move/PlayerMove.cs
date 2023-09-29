@@ -181,7 +181,7 @@ public class PlayerMove : MonoBehaviour
                             //IsDiscoveryEvent(hit);
                             break;
                         case HexType.Battle:
-                            //IsBattle(hit);
+                            IsBattle(hit);
                             break;
                         case HexType.ConversationEvent:
                             IsConversationEvent(hit);
@@ -193,7 +193,7 @@ public class PlayerMove : MonoBehaviour
     }
     
 
-    /*private void IsBattle(RaycastHit hit)
+    private void IsBattle(RaycastHit hit)
     {
         StartCoroutine(IsBattleWithDelay(hit));
     }
@@ -201,10 +201,10 @@ public class PlayerMove : MonoBehaviour
     {
         yield return new WaitForSeconds(0.2f); // 0.2√  µÙ∑π¿Ã
 
-        ConversationEvent conversationEvent = hit.transform.GetComponent<ConversationEvent>();
-        conversationEvent.CallShowDialogue();
-        gameObject.SetActive(false);
-    }*/
+        BattleEvent battleEvent = hit.transform.GetComponent<BattleEvent>();
+        battleEvent.CallBattle(); 
+        gameObject.GetComponent<PlayerMove>().enabled = false;
+    }
 
     /*private void IsDiscoveryEvent(RaycastHit hit)
     {
