@@ -20,6 +20,7 @@ public class Stat : MonoBehaviour
     public int dp = 50;
     public int atk = 20;
     public int ap = 10;
+    public bool Dead = false;
 
     void Start()
     {
