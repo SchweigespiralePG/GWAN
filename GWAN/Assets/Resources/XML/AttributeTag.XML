@@ -1,71 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <attributes>
-
-    <천>
-        <name>천</name>
-        <strengths>
-            <strength>
-                <against>지</against>
-                <multiplier>1.1</multiplier>
-            </strength>
-        </strengths>
-        <weaknesses>
-            <weakness>
-                <against>인</against>
-                <multiplier>0.9</multiplier>
-            </weakness>
-        </weaknesses>
-    </천>
-
-    <지>
-        <name>지</name>
-        <strengths>
-            <strength>
-                <against>인</against>
-                <multiplier>1.1</multiplier>
-            </strength>
-        </strengths>
-        <weaknesses>
-            <weakness>
-                <against>천</against>
-                <multiplier>0.9</multiplier>
-            </weakness>
-        </weaknesses>
-    </지>
-
-    <인>
-        <name>인</name>
-        <strengths>
-            <strength>
-                <against>천</against>
-                <multiplier>1.1</multiplier>
-            </strength>
-        </strengths>
-        <weaknesses>
-            <weakness>
-                <against>지</against>
-                <multiplier>0.9</multiplier>
-            </weakness>
-        </weaknesses>
-    </인>
-
-    <별>
-        <name>별</name>
-        <strengths>
-            <strength>
-                <against>짐승</against>
-                <multiplier>1.1</multiplier>
-            </strength>
-        </strengths>
-    </별>
-
-    <짐승>
-        <name>짐승</name>
-        <strengths>
-            <strength>
-                <against>별</against>
-                <multiplier>1.1</multiplier>
-            </strength>
-        </strengths>
-    </짐승>
-
+	<property name="천"/>
+	<property name="지"/>
+	<property name="인"/>
+	<property name="별"/>
+	<property name="짐승"/>
+	<property name="남성"/>
+	<property name="여성"/>
+	<property name="무성"/>
+	<property name="인간"/>
+	<property name="사령"/>
+	<property name="악마"/>
+	<property name="신성"/>
+	<property name="인간형"/>
+	<property name="용"/>
+	<property name="맹수"/>
+	<property name="특별한 별"/>
+	<property name="기승"/>
+	<property name="애인"/>
+	<property name="마성"/>
+	<property name="초거대"/>
+	<property name="원초의 숫자"/>
+	<property name="왕"/>
 </attributes>

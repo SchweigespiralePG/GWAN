@@ -73,6 +73,7 @@
     <Compile Include="Assets\Script\MapScrpts\Event\ConversationEvent.cs" />
     <Compile Include="Assets\Script\Book\CardUI.cs" />
     <Compile Include="Assets\Script\GameManager\battle\UI\HpBar.cs" />
+    <Compile Include="Assets\Script\GameManager\battle\Enemy\EnemyPattern.cs" />
     <Compile Include="Assets\Script\Vertex\FixedVertex.cs" />
     <Compile Include="Assets\Script\MapScrpts\Viewer\HexatileViewer.cs" />
     <Compile Include="Assets\Script\Book\CardSlot.cs" />
@@ -88,7 +89,6 @@
     <Compile Include="Assets\Script\Book\CardSlotGridManager.cs" />
     <Compile Include="Assets\Script\MapScrpts\Event\BattleEvent.cs" />
     <Compile Include="Assets\Script\MapScrpts\Move\PlayerMove.cs" />
-    <Compile Include="Assets\Script\GameManager\battle\Enemy\EnemyPattern.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

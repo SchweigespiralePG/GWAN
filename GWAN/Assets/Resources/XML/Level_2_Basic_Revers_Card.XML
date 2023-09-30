@@ -1,28 +1,13 @@
-<Level_2_Revers_Basic_Card>
-    <G4SedimentMagicTool>
-        <name>G4급 퇴적 헤르티윰제 마도구</name>
-        <description>아츠를 훈련하기 위해 제작된 특수한 유리의 장비 일반적인 훈련용장비보단 날카롭지만 훨씬 망가지기 쉽다.</description>
-        <num>0291</num>
-        <count>1</count>
-        <role>Weapon</role>
-        <rate>2</rate>
-        <ReverseForward>반전</ReverseForward>
-        <Extinction>True</Extinction>
-        <bearer>Player</bearer>
-        <AcquisitionDifficulty>baisic</AcquisitionDifficulty>
-    </G4SedimentMagicTool>
-
-    <G3LiquidMagicTool>
-        <name>G3급 액체 내포화 헤르티윰제 마도구</name>
-        <description>아츠를 훈련하기 위해 제작된 특수한 유리의 장비 일반적인 훈련용장비보단 날카롭지만 훨씬 망가지기 쉽다.</description>
-        <num>0292</num>
-        <count>2</count>
-        <role>Weapon</role>
-        <rate>2</rate>
-        <ReverseForward>반전</ReverseForward>
-        <Extinction>True</Extinction>
-        <bearer>Player</bearer>
-        <AcquisitionDifficulty>baisic</AcquisitionDifficulty>
-    </G3LiquidMagicTool>
-
-</Level_2_Revers_Basic_Card>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Level_2_Basic_Forward_Card>
+	<card name="G4급 퇴적 헤르티윰제 마도구" description="아츠를 훈련하기 위해 제작된 특수한 유리의 장비 일반적인 훈련용장비보단 날카롭지만 훨씬 망가지기 쉽다." ID="291" count="1" role="Weapon" rate="2" ReverseForward="反転" Extinction="可能" bearer="Player" AcquisitionDifficulty="baisic"/>
+	<card name="G4급 퇴적 헤르티윰제 마도구" description="아츠를 훈련하기 위해 제작된 특수한 유리의 장비 일반적인 훈련용장비보단 날카롭지만 훨씬 망가지기 쉽다." ID="292" count="2" role="Weapon" rate="2" ReverseForward="反転" Extinction="可能" bearer="Player" AcquisitionDifficulty="baisic"/>
+	<card name="G4급 퇴적 헤르티윰제 마도구" description="아츠를 훈련하기 위해 제작된 특수한 유리의 장비 일반적인 훈련용장비보단 날카롭지만 훨씬 망가지기 쉽다." ID="293" count="3" role="Weapon" rate="2" ReverseForward="反転" Extinction="可能" bearer="Player" AcquisitionDifficulty="baisic"/>
+	<card name="G4급 퇴적 헤르티윰제 마도구" description="아츠를 훈련하기 위해 제작된 특수한 유리의 장비 일반적인 훈련용장비보단 날카롭지만 훨씬 망가지기 쉽다." ID="294" count="4" role="Weapon" rate="2" ReverseForward="反転" Extinction="可能" bearer="Player" AcquisitionDifficulty="baisic"/>
+	<card name="G4급 퇴적 헤르티윰제 마도구" description="아츠를 훈련하기 위해 제작된 특수한 유리의 장비 일반적인 훈련용장비보단 날카롭지만 훨씬 망가지기 쉽다." ID="295" count="5" role="Weapon" rate="2" ReverseForward="反転" Extinction="可能" bearer="Player" AcquisitionDifficulty="baisic"/>
+	<card name="G3급 액체 내포화 헤르티윰제 마도구" description="아츠를 훈련하기 위해 제작된 특수한 유리의 장비 일반적인 훈련용장비보단 날카롭지만 훨씬 망가지기 쉽다." ID="296" count="6" role="Weapon" rate="2" ReverseForward="反転" Extinction="可能" bearer="Player" AcquisitionDifficulty="baisic"/>
+	<card name="G3급 액체 내포화 헤르티윰제 마도구" description="아츠를 훈련하기 위해 제작된 특수한 유리의 장비 일반적인 훈련용장비보단 날카롭지만 훨씬 망가지기 쉽다." ID="297" count="7" role="Weapon" rate="2" ReverseForward="反転" Extinction="可能" bearer="Player" AcquisitionDifficulty="baisic"/>
+	<card name="G3급 액체 내포화 헤르티윰제 마도구" description="아츠를 훈련하기 위해 제작된 특수한 유리의 장비 일반적인 훈련용장비보단 날카롭지만 훨씬 망가지기 쉽다." ID="298" count="8" role="Weapon" rate="2" ReverseForward="反転" Extinction="可能" bearer="Player" AcquisitionDifficulty="baisic"/>
+	<card name="G3급 액체 내포화 헤르티윰제 마도구" description="아츠를 훈련하기 위해 제작된 특수한 유리의 장비 일반적인 훈련용장비보단 날카롭지만 훨씬 망가지기 쉽다." ID="299" count="9" role="Weapon" rate="2" ReverseForward="反転" Extinction="可能" bearer="Player" AcquisitionDifficulty="baisic"/>
+	<card name="G3급 액체 내포화 헤르티윰제 마도구" description="아츠를 훈련하기 위해 제작된 특수한 유리의 장비 일반적인 훈련용장비보단 날카롭지만 훨씬 망가지기 쉽다." ID="300" count="10" role="Weapon" rate="2" ReverseForward="反転" Extinction="可能" bearer="Player" AcquisitionDifficulty="baisic"/>
+</Level_2_Basic_Forward_Card>
