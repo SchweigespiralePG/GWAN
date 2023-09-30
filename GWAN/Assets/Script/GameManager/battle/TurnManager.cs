@@ -2,11 +2,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TurnManager : MonoBehaviour
 {
     public Stat PlayerStat;
     public Stat EnemyStat;
+
+    public Button[] buttons; // 버튼 배열
 
     private int playerADex;
     private int playerBDex;
@@ -74,11 +77,13 @@ public class TurnManager : MonoBehaviour
         {
             Debug.Log("플레이어 A의 턴");
             playerADex -= TurnDexDecrease;
+            NoOffButtons(true);
             Debug.Log("플레이어 A의 Dex 감소: " + playerADex);
         }
         else
         {
             Debug.Log("플레이어 B의 턴");
+            NoOffButtons(false);
             playerBDex -= TurnDexDecrease;
             Debug.Log("플레이어 B의 Dex 감소: " + playerBDex);
         }
@@ -99,6 +104,15 @@ public class TurnManager : MonoBehaviour
     {
         // 다음 턴으로 전환
         StartTurn();
+    }
+
+
+    public void NoOffButtons(bool mode)
+    {
+        foreach (Button button in buttons)
+        {
+            button.interactable = mode;
+        }
     }
 }
 

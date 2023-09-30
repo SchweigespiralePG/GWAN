@@ -369,6 +369,7 @@
 "Assets/Script/Conversation/ConversationManager.cs"
 "Assets/Script/GameManager/battle/ATK/attack.cs"
 "Assets/Script/GameManager/battle/BattleManager.cs"
+"Assets/Script/GameManager/battle/Enemy/EnemyPattern.cs"
 "Assets/Script/GameManager/battle/TurnManager.cs"
 "Assets/Script/GameManager/battle/UI/HpBar.cs"
 "Assets/Script/GameManager/Status/Stat.cs"

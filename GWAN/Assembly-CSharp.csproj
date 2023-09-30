@@ -88,6 +88,7 @@
     <Compile Include="Assets\Script\Book\CardSlotGridManager.cs" />
     <Compile Include="Assets\Script\MapScrpts\Event\BattleEvent.cs" />
     <Compile Include="Assets\Script\MapScrpts\Move\PlayerMove.cs" />
+    <Compile Include="Assets\Script\GameManager\battle\Enemy\EnemyPattern.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
