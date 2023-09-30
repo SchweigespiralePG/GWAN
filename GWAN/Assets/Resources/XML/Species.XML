@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Species>
+	<tribe name="에이션츠" staA="5" staB="1" card="A"/>
+	<tribe name="탈리아" staA="2" staB="2" card="_"/>
+	<tribe name="베헤모스" staA="2" staB="2" card="_"/>
+	<tribe name="사라그" staA="8.75" staB="3" card="2"/>
+	<tribe name="산크타" staA="8.75" staB="3" card="3"/>
+	<tribe name="이미르" staA="8.75" staB="3" card="4"/>
+	<tribe name="용" staA="8.75" staB="2" card="5"/>
+	<tribe name="와이번" staA="8.75" staB="2" card="6"/>
+	<tribe name="아닥스" staA="5" staB="1.25" card="7"/>
+	<tribe name="아슬란" staA="6.5" staB="1.5" card="8"/>
+	<tribe name="필라인" staA="6" staB="1.3" card="9"/>
+	<tribe name="루펠트" staA="6" staB="1.3" card="10"/>
+	<tribe name="라이베리아" staA="5" staB="1.5" card="J"/>
+	<tribe name="나비안" staA="5" staB="1.3" card="Q"/>
+	<tribe name="드붸르그" staA="3.75" staB="0.7" card="K"/>
+	<tribe name="제노모프" staA="10" staB="0.25" card="Black_Jocker"/>
+</Species>

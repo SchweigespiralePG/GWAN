@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<BasicStats>
+	<Stats ID="0" Name="플레이어" Str="10" Con="10" Size="10" Edu="10" Apd="10" Dex="10" Int="10" Luck="10" Hp="10" RHp="10" Dp="10" Atk="10" AP="10"/>
+	<Stats ID="1" Name="플레이어1" Str="10" Con="10" Size="10" Edu="10" Apd="10" Dex="10" Int="10" Luck="10" Hp="10" RHp="10" Dp="10" Atk="10" AP="10"/>
+	<Stats ID="2" Name="플레이어2" Str="10" Con="10" Size="10" Edu="10" Apd="10" Dex="10" Int="10" Luck="10" Hp="10" RHp="10" Dp="10" Atk="10" AP="10"/>
+</BasicStats>

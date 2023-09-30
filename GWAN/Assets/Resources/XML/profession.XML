@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<professions>
+	<JobClass name="Vanguard" division="1"/>
+	<JobClass name="Guard" division="1"/>
+	<JobClass name="Defender" division="1"/>
+	<JobClass name="Specialist" division="1"/>
+	<JobClass name="Sniper" division="0"/>
+	<JobClass name="Caster" division="2"/>
+	<JobClass name="Medic" division="2"/>
+	<JobClass name="Surporter" division="2"/>
+</professions>

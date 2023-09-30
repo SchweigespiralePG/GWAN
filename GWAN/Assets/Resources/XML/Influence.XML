@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Influence>
+	<forces nane="AB" civilization="전부" tribe="다양함" thought="구원_世" AffiliatedForce="O" join="X"/>
+	<forces nane="AB 제약" civilization="전부" tribe="다양함" thought="구원_世" AffiliatedForce="X" join="X"/>
+	<forces nane="파라테티스" civilization="아나톨리아" tribe="이미르" thought="자유민주주의" AffiliatedForce="O" join="O"/>
+	<forces nane="볼리바르" civilization="아나톨리아" tribe="감염자" thought="물질만능주의" AffiliatedForce="X" join="X"/>
+	<forces nane="세베린" civilization="아나톨리아" tribe="이미르" thought="자유 경제주의" AffiliatedForce="X" join="X"/>
+	<forces nane="뵈브르" civilization="아나톨리아" tribe="나비안" thought="자유민주주의" AffiliatedForce="X" join="X"/>
+	<forces nane="라이타니아" civilization="아나톨리아" tribe="에이션츠" thought="발전주의" AffiliatedForce="X" join="X"/>
+	<forces nane="흰수염" civilization="아나톨리아" tribe="이미르" thought="자유민주주의" AffiliatedForce="X" join="X"/>
+	<forces nane="우라후트겐" civilization="아나톨리아, 나비아 반반" tribe="루펠트" thought="제국주의" AffiliatedForce="O" join="X"/>
+	<forces nane="유흐나" civilization="아나톨리아, 나비아 반반" tribe="루펠트" thought="발전주의" AffiliatedForce="X" join="X"/>
+	<forces nane="고르니" civilization="아나톨리아, 나비아 반반" tribe="나비안" thought="사회주의" AffiliatedForce="X" join="X"/>
+	<forces nane="인페라툴" civilization="아나톨리아, 나비아 반반" tribe="루펠트" thought="제국주의" AffiliatedForce="X" join="X"/>
+	<forces nane="자크리토이" civilization="아나톨리아, 나비아 반반" tribe="None" thought="제국주의" AffiliatedForce="X" join="X"/>
+	<forces nane="리녹 크로비" civilization="나비아" tribe="나비안" thought="물질만능주의" AffiliatedForce="X" join="X"/>
+	<forces nane="글로리아" civilization="나비아" tribe="아슬란" thought="군주주의" AffiliatedForce="O" join="O"/>
+	<forces nane="이든나이어" civilization="나비아" tribe="아슬란" thought="군주주의" AffiliatedForce="X" join="X"/>
+	<forces nane="가든템플러" civilization="나비아" tribe="아슬란" thought="군주주의" AffiliatedForce="X" join="X"/>
+	<forces nane="킹덤세인크리스" civilization="나비아" tribe="아슬란" thought="군주주의" AffiliatedForce="X" join="X"/>
+	<forces nane="빅팜" civilization="나비아" tribe="아슬란" thought="군주주의" AffiliatedForce="X" join="X"/>
+	<forces nane="라플라스데글로리" civilization="나비아" tribe="아슬란" thought="군주주의" AffiliatedForce="X" join="X"/>
+	<forces nane="안티베인" civilization="나비아" tribe="아슬란" thought="군주주의" AffiliatedForce="X" join="X"/>
+	<forces nane="잭 오 랜턴" civilization="나비아" tribe="아슬란" thought="군주주의" AffiliatedForce="X" join="X"/>
+	<forces nane="아우텀" civilization="바니아" tribe="와이번(드라군)" thought="신비주의" AffiliatedForce="O" join="O"/>
+	<forces nane="미노네시안" civilization="바니아" tribe="와이번(드라군)" thought="신비주의" AffiliatedForce="X" join="X"/>
+	<forces nane="아가트람" civilization="바니아" tribe="드라군" thought="신비주의" AffiliatedForce="X" join="X"/>
+	<forces nane="레버넌트" civilization="바니아" tribe="와이번(드라군)" thought="신비주의" AffiliatedForce="X" join="X"/>
+	<forces nane="듀헤인" civilization="바니아" tribe="와이번(드라군)" thought="신비주의" AffiliatedForce="X" join="X"/>
+	<forces nane="산크타" civilization="나비아" tribe="산크타" thought="절대신앙주의" AffiliatedForce="O" join="O"/>
+	<forces nane="엘더" civilization="나비아" tribe="산크타" thought="절대신앙주의" AffiliatedForce="X" join="X"/>
+	<forces nane="공증소" civilization="나비아" tribe="산크타" thought="절대신앙주의" AffiliatedForce="X" join="X"/>
+	<forces nane="성기사단" civilization="나비아" tribe="산크타" thought="절대신앙주의" AffiliatedForce="X" join="X"/>
+	<forces nane="순교의관" civilization="나비아" tribe="산크타" thought="절대신앙주의" AffiliatedForce="X" join="X"/>
+	<forces nane="뤼즈갈" civilization="아나톨리아" tribe="에이션츠" thought="사회주의, 군주주의" AffiliatedForce="O" join="O"/>
+	<forces nane="비스무트" civilization="아나톨리아" tribe="에이션츠" thought="사회주의, 군주주의" AffiliatedForce="X" join="X"/>
+	<forces nane="바빌론" civilization="아나톨리아" tribe="에이션츠" thought="복합 이상주의" AffiliatedForce="X" join="X"/>
+	<forces nane="쿰 다흐" civilization="아나톨리아" tribe="에이션츠" thought="군주주의" AffiliatedForce="X" join="X"/>
+	<forces nane="청안의 묵시자" civilization="아나톨리아" tribe="에이션츠" thought="복합이상주의" AffiliatedForce="X" join="X"/>
+	<forces nane="솔롱고스" civilization="아나톨리아" tribe="에이션츠" thought="자유 민주주의" AffiliatedForce="O" join="O"/>
+	<forces nane="공화파" civilization="아나톨리아" tribe="에이션츠" thought="자유 미주주의" AffiliatedForce="X" join="X"/>
+	<forces nane="진보파" civilization="아나톨리아" tribe="에이션츠" thought="자유 민주주의" AffiliatedForce="X" join="X"/>
+	<forces nane="NDL" civilization="아나톨리아,달문명" tribe="에이션츠" thought="발전주의_人" AffiliatedForce="X" join="X"/>
+	<forces nane="노른 순스" civilization="아나톨리아" tribe="에이션츠" thought="자유 민주주의" AffiliatedForce="X" join="X"/>
+	<forces nane="이성의 순례자" civilization="구문명" tribe="다양함" thought="구원_人" AffiliatedForce="O" join="X"/>
+	<forces nane="발 아레스" civilization="아나톨리아" tribe="사라그" thought="사회주의" AffiliatedForce="X" join="X"/>
+	<forces nane="프로미카로사" civilization="나비아" tribe="다양함" thought="사회주의" AffiliatedForce="X" join="X"/>
+	<forces nane="루푸스" civilization="아나톨리아" tribe="루펠트" thought="자유민주주의" AffiliatedForce="X" join="X"/>
+</Influence>

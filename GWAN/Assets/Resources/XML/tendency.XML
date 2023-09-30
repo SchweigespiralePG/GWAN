@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<orientations>
+	<tendency name="질서・선"/>
+	<tendency name="질서・중립"/>
+	<tendency name="질서・악"/>
+	<tendency name="광"/>
+	<tendency name="중립・선"/>
+	<tendency name="중립"/>
+	<tendency name="중립・악"/>
+	<tendency name="자유"/>
+	<tendency name="혼돈・선"/>
+	<tendency name="혼돈・중립"/>
+	<tendency name="혼돈・악"/>
+</orientations>

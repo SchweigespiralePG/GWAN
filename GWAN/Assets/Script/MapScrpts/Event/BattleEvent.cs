@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class BattleEvent : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public GameObject BattleManager;
+    public GameObject BattleUI;
+
+    public void CallBattle()
     {
-        
+        BattleManager manager = BattleManager.GetComponent<BattleManager>();
+
+        if (manager != null)
+        {
+            BattleManager.SetActive(true);
+            BattleUI.SetActive(true);
+        }
+        else
+        {
+            Debug.LogError("BattleManager component is not found on BattleManagerObject.");
+        }
     }
 }

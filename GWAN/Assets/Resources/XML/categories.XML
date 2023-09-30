@@ -1,0 +1,14 @@
+<categories>
+	<lineer name="Ateacker"/>
+	<lineer name="Breaker"/>
+	<lineer name="Defender"/>
+	<lineer name="Blaster"/>
+	<lineer name="Arts_Ateacker"/>
+	<lineer name="Arts_breaker"/>
+	<lineer name="Arts_defender"/>
+	<lineer name="Arts_Blaster"/>
+	<lineer name="Buffer"/>
+	<lineer name="Debuffer"/>
+	<lineer name="healer"/>
+
+</categories>

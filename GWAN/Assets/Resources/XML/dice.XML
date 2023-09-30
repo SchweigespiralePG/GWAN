@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<diceRolls>
+	<diceRoll name="D2" maxValue="2"/>
+	<diceRoll name="D4" maxValue="4"/>
+	<diceRoll name="D6" maxValue="6"/>
+	<diceRoll name="D8" maxValue="8"/>
+	<diceRoll name="D10" maxValue="10"/>
+	<diceRoll name="D12" maxValue="12"/>
+	<diceRoll name="D20" maxValue="20"/>
+	<diceRoll name="D100" maxValue="100"/>
+</diceRolls>
