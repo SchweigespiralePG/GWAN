@@ -32,15 +32,15 @@ TagManager:
   - 
   - 
   - 
-  - (Card)Background
-  - (Card)Star
-  - (Card)Element
-  - (Card)text
-  - (Card)Img
+  - 
+  - 
+  - 
+  - 
+  - 
   m_SortingLayers:
   - name: Default
     uniqueID: 0
     locked: 0
   - name: New Layer 1
-    uniqueID: 2508120801
+    uniqueID: 1746618299
     locked: 0
