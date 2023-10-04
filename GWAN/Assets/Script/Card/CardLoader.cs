@@ -18,7 +18,7 @@ public class CardLoader : MonoBehaviour
         XmlDocument xmlDoc = new XmlDocument();
         xmlDoc.LoadXml(cardDataXML.text);
 
-        XmlNodeList cardNodes = xmlDoc.SelectNodes("Level_2_Basic_Forward_Card/card");
+        XmlNodeList cardNodes = xmlDoc.SelectNodes("Card.XML");
 
         foreach (XmlNode cardNode in cardNodes)
         {
