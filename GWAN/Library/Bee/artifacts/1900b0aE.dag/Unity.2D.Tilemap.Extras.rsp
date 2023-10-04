@@ -333,13 +333,13 @@
 -r:"D:/unity game/2021.3.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
-"Library/PackageCache/com.unity.2d.tilemap.extras@2.2.6/Runtime/GridInformation/GridInformation.cs"
-"Library/PackageCache/com.unity.2d.tilemap.extras@2.2.6/Runtime/Tiles/AnimatedTile/AnimatedTile.cs"
-"Library/PackageCache/com.unity.2d.tilemap.extras@2.2.6/Runtime/Tiles/HexagonalRuleTile/HexagonalRuleTile.cs"
-"Library/PackageCache/com.unity.2d.tilemap.extras@2.2.6/Runtime/Tiles/IsometricRuleTile/IsometricRuleTile.cs"
-"Library/PackageCache/com.unity.2d.tilemap.extras@2.2.6/Runtime/Tiles/RuleOverrideTile/AdvancedRuleOverrideTile.cs"
-"Library/PackageCache/com.unity.2d.tilemap.extras@2.2.6/Runtime/Tiles/RuleOverrideTile/RuleOverrideTile.cs"
-"Library/PackageCache/com.unity.2d.tilemap.extras@2.2.6/Runtime/Tiles/RuleTile/RuleTile.cs"
+"Library/PackageCache/com.unity.2d.tilemap.extras@2.2.7/Runtime/GridInformation/GridInformation.cs"
+"Library/PackageCache/com.unity.2d.tilemap.extras@2.2.7/Runtime/Tiles/AnimatedTile/AnimatedTile.cs"
+"Library/PackageCache/com.unity.2d.tilemap.extras@2.2.7/Runtime/Tiles/HexagonalRuleTile/HexagonalRuleTile.cs"
+"Library/PackageCache/com.unity.2d.tilemap.extras@2.2.7/Runtime/Tiles/IsometricRuleTile/IsometricRuleTile.cs"
+"Library/PackageCache/com.unity.2d.tilemap.extras@2.2.7/Runtime/Tiles/RuleOverrideTile/AdvancedRuleOverrideTile.cs"
+"Library/PackageCache/com.unity.2d.tilemap.extras@2.2.7/Runtime/Tiles/RuleOverrideTile/RuleOverrideTile.cs"
+"Library/PackageCache/com.unity.2d.tilemap.extras@2.2.7/Runtime/Tiles/RuleTile/RuleTile.cs"
 -langversion:9.0
 
 /deterministic
