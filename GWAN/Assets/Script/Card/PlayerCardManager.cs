@@ -48,7 +48,7 @@ public class PlayerCardManager : MonoBehaviour
     private void LoadStatsFromXML()
     {
         // XML 파일을 로드합니다.
-        TextAsset xmlAsset = Resources.Load<TextAsset>(xmlFilePath);
+        TextAsset xmlAsset = Resources.Load<TextAsset>("XML/HaveCard");
         if (xmlAsset == null)
         {
             UnityEngine.Debug.LogError("XML file not found at path: " + xmlFilePath);
@@ -58,8 +58,8 @@ public class PlayerCardManager : MonoBehaviour
         XmlDocument xmlDoc = new XmlDocument();
         xmlDoc.LoadXml(xmlAsset.text);
 
-        // XML에서 모든 "PlayerCard" 엘리먼트를 가져옵니다.
-        XmlNodeList cardNodes = xmlDoc.SelectNodes("//PlayerCard");
+        // XML에서 모든 "HaveCard" 엘리먼트를 가져옵니다.
+        XmlNodeList cardNodes = xmlDoc.SelectNodes("/HaveCard/card");
 
         foreach (XmlNode cardNode in cardNodes)
         {

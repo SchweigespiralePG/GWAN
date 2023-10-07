@@ -2980,7 +2980,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be3463bb36fb82e4aa69ffb0733059e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xmlFilePath: Assets/Resources/XML/HaveCard.xml
   playercard: []
 --- !u!4 &1751382986
 Transform:

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Card>
+<HaveCard>
 	<card name="허름한 목재 화살과 활" description="사용자의전투능력을 최저로 한정시키기 위해 제작된 훈련용 장비이자, 가장 약하고 가장 물르다" ID="52" count="2" role="Weapon" rate="2" ReverseForward="true" Extinction="true" bearer="Player" AcquisitionDifficulty="baisic"/>
 	<card name="허름한 목재 창" description="사용자의전투능력을 최저로 한정시키기 위해 제작된 훈련용 장비이자, 가장 약하고 가장 물르다" ID="53" count="3" role="Weapon" rate="2" ReverseForward="true" Extinction="true" bearer="Player" AcquisitionDifficulty="baisic"/>
 	<card name="허름한 목제 도끼" description="사용자의전투능력을 최저로 한정시키기 위해 제작된 훈련용 장비이자, 가장 약하고 가장 물르다" ID="54" count="4" role="Weapon" rate="2" ReverseForward="true" Extinction="true" bearer="Player" AcquisitionDifficulty="baisic"/>
@@ -9,4 +9,4 @@
 	<card name="허름한 가죽 건틀릿" description="사용자의전투능력을 최저로 한정시키기 위해 제작된 훈련용 장비이자, 가장 약하고 가장 물르다" ID="58" count="8" role="Weapon" rate="2" ReverseForward="true" Extinction="true" bearer="Player" AcquisitionDifficulty="baisic"/>
 	<card name="허름한 무명실" description="사용자의전투능력을 최저로 한정시키기 위해 제작된 훈련용 장비이자, 가장 약하고 가장 물르다" ID="59" count="9" role="Weapon" rate="2" ReverseForward="true" Extinction="true" bearer="Player" AcquisitionDifficulty="baisic"/>
 	<card name="값싼 연습용 지팡이" description="사용자의전투능력을 최저로 한정시키기 위해 제작된 훈련용 장비이자, 가장 약하고 가장 물르다" ID="60" count="10" role="Weapon" rate="2" ReverseForward="true" Extinction="true" bearer="Player" AcquisitionDifficulty="baisic"/>
-</Card>
+</HaveCard>
