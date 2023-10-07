@@ -411,6 +411,7 @@ GameObject:
   - component: {fileID: 80414510}
   - component: {fileID: 80414509}
   - component: {fileID: 80414508}
+  - component: {fileID: 80414512}
   m_Layer: 5
   m_Name: SETTINGS CANVAS
   m_TagString: Untagged
@@ -501,6 +502,28 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &80414512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80414507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59682d6702a21a148855f0a9c564af7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fullscreenToggle: {fileID: 1779925598}
+  resolutionDropDown: {fileID: 875773041}
+  textureQualityDropdown: {fileID: 914946300}
+  antialiasingDropdown: {fileID: 1531555245}
+  vSyncDropdown: {fileID: 320845841}
+  masterVolumeSlider: {fileID: 547215671}
+  BGMVolumeSlider: {fileID: 355618521}
+  FXVolumeSlider: {fileID: 478161966}
+  SaveButton: {fileID: 803673159}
+  MasterMixer: {fileID: 24100000, guid: 3b2d953c1bd14a642b7ddcd252172eb0, type: 2}
 --- !u!1 &85495700
 GameObject:
   m_ObjectHideFlags: 0
@@ -646,7 +669,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Option A
+  m_Text: OFF
 --- !u!222 &103600240
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1393,11 +1416,11 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Option A
+    - m_Text: OFF
       m_Image: {fileID: 0}
-    - m_Text: Option B
+    - m_Text: Every VSync
       m_Image: {fileID: 0}
-    - m_Text: Option C
+    - m_Text: Second VSync
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1689,8 +1712,8 @@ MonoBehaviour:
   m_FillRect: {fileID: 1271994286}
   m_HandleRect: {fileID: 1419917655}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 1
+  m_MinValue: -40
+  m_MaxValue: 0
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -2438,8 +2461,8 @@ MonoBehaviour:
   m_FillRect: {fileID: 1273653832}
   m_HandleRect: {fileID: 1479381174}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 1
+  m_MinValue: -40
+  m_MaxValue: 0
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -2760,7 +2783,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Option A
+  m_Text: OFF
 --- !u!222 &492927258
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3175,8 +3198,8 @@ MonoBehaviour:
   m_FillRect: {fileID: 1197902940}
   m_HandleRect: {fileID: 2096695655}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 1
+  m_MinValue: -40
+  m_MaxValue: 0
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -4742,6 +4765,7 @@ GameObject:
   - component: {fileID: 803673160}
   - component: {fileID: 803673159}
   - component: {fileID: 803673158}
+  - component: {fileID: 803673162}
   m_Layer: 5
   m_Name: Button - Exit
   m_TagString: Untagged
@@ -4829,9 +4853,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 803673162}
         m_TargetAssemblyTypeName: M_MenuButtonSystem, Assembly-CSharp
-        m_MethodName: GameSettings
+        m_MethodName: GameLoad
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4879,6 +4903,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 803673156}
   m_CullTransparentMesh: 1
+--- !u!114 &803673162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803673156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0b786119142f7489ee56eb3cb52110, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneName: Screen [M_MENU]
+  levelLoader: {fileID: 1383206029}
 --- !u!1 &806291567
 GameObject:
   m_ObjectHideFlags: 0
@@ -5337,13 +5375,7 @@ MonoBehaviour:
   m_ItemImage: {fileID: 0}
   m_Value: 0
   m_Options:
-    m_Options:
-    - m_Text: Option A
-      m_Image: {fileID: 0}
-    - m_Text: Option B
-      m_Image: {fileID: 0}
-    - m_Text: Option C
-      m_Image: {fileID: 0}
+    m_Options: []
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -5560,11 +5592,11 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Option A
+    - m_Text: "\uB192\uC74C"
       m_Image: {fileID: 0}
-    - m_Text: Option B
+    - m_Text: "\uC911\uAC04"
       m_Image: {fileID: 0}
-    - m_Text: Option C
+    - m_Text: "\uB0AE\uC74C"
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -7078,7 +7110,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Option A
+  m_Text: "\uB192\uC74C"
 --- !u!222 &1141333074
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8318,6 +8350,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5010175195432397227, guid: 0f614182434ab0640a19df4c142f930f, type: 3}
   m_PrefabInstance: {fileID: 1383206027}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1383206029 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5010175195432397224, guid: 0f614182434ab0640a19df4c142f930f, type: 3}
+  m_PrefabInstance: {fileID: 1383206027}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee829f5b0c7e6440b878901162c4712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1392588028
 GameObject:
   m_ObjectHideFlags: 0
@@ -9321,11 +9364,11 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Option A
+    - m_Text: OFF
       m_Image: {fileID: 0}
-    - m_Text: Option B
+    - m_Text: 2x Sampling
       m_Image: {fileID: 0}
-    - m_Text: Option C
+    - m_Text: 4x Sampling
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -10224,7 +10267,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Option A
+  m_Text: 
 --- !u!222 &1799487871
 CanvasRenderer:
   m_ObjectHideFlags: 0

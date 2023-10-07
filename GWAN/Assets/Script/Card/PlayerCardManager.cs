@@ -32,7 +32,7 @@ public class PlayerCardManager : MonoBehaviour
         try
         {
             // XML 파일을 읽어와 스탯 데이터를 파싱합니다.
-            LoadStatsFromXML();
+            //LoadStatsFromXML();
 
             // 리스트 내용을 디버그합니다.
             DebugPlayerCardList();
