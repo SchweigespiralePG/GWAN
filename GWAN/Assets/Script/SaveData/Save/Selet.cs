@@ -17,6 +17,7 @@ public class Selet : MonoBehaviour
 
     void Start()
     {
+        Debug.Log(DataManager.instance.Route);
         for (int i = 0; i < 4; i++)
         {
 

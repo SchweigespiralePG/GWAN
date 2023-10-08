@@ -8,8 +8,12 @@ public class PlayerData
 {
     //저장이름
     public string DataName;
-    
-    /*/스테이터스
+
+    //현재가지고 있는카드
+
+    public List<int> HaveCard = new List<int>();
+
+    //스테이터스
     public string Name;
     public int Str;
     public int Con;
@@ -23,15 +27,18 @@ public class PlayerData
     public int RHp;
     public int Dp;
     public int Atk;
-    public int AP;*/
+    public int AP;
 
     //위치
     public Vector3 PlayerPosition;
 
     //스테이지
+    public List<int> stageValue = new List<int>();
 
-    
     //방문여부
+
+    public List<int> visitValue = new List<int>();
+
 }
 
 
@@ -43,6 +50,7 @@ public class DataManager : MonoBehaviour
 
     public string Route;
     public int SaveDataNumber;
+
 
     private void Awake()
     {

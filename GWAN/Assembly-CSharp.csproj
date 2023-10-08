@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\MapScrpts\Map\PlayerHexTile.cs" />
+    <Compile Include="Assets\Script\SaveData\Save\Selet.cs" />
     <Compile Include="Assets\Script\MapScrpts\Event\DiscoveryEvent.cs" />
     <Compile Include="Assets\Script\Settings\SettingManager.cs" />
     <Compile Include="Assets\Script\MapScrpts\Utillty\HexGridUtility.cs" />
@@ -66,6 +67,7 @@
     <Compile Include="Assets\Script\Menu\SettingsMenu.cs" />
     <Compile Include="Assets\Script\GameManager\Status\Stat.cs" />
     <Compile Include="Assets\Script\MapScrpts\Map\HexTile.cs" />
+    <Compile Include="Assets\Script\SaveData\DataManager.cs" />
     <Compile Include="Assets\Script\GameManager\battle\ATK\attack.cs" />
     <Compile Include="Assets\Script\MapScrpts\Event\ConversationEvent.cs" />
     <Compile Include="Assets\Script\Card\PlayerCardManager.cs" />
@@ -83,8 +85,6 @@
     <Compile Include="Assets\Script\MapScrpts\Event\BattleEvent.cs" />
     <Compile Include="Assets\Script\Settings\GameSettings.cs" />
     <Compile Include="Assets\Script\MapScrpts\Move\PlayerMove.cs" />
-    <Compile Include="Assets\Script\SaveData\DataManager.cs" />
-    <Compile Include="Assets\Script\SaveData\Save\Selet.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
