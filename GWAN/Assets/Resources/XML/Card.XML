@@ -20,57 +20,57 @@
 	<card name="허름한 가죽 건틀릿" description="사용자의전투능력을 최저로 한정시키기 위해 제작된 훈련용 장비이자, 가장 약하고 가장 물르다" ID="58" count="8" role="Weapon" rate="2" ReverseForward="true" Extinction="true" bearer="Player" AcquisitionDifficulty="baisic"/>
 	<card name="허름한 무명실" description="사용자의전투능력을 최저로 한정시키기 위해 제작된 훈련용 장비이자, 가장 약하고 가장 물르다" ID="59" count="9" role="Weapon" rate="2" ReverseForward="true" Extinction="true" bearer="Player" AcquisitionDifficulty="baisic"/>
 	<card name="값싼 연습용 지팡이" description="사용자의전투능력을 최저로 한정시키기 위해 제작된 훈련용 장비이자, 가장 약하고 가장 물르다" ID="60" count="10" role="Weapon" rate="2" ReverseForward="true" Extinction="true" bearer="Player" AcquisitionDifficulty="baisic"/>
-	<card name="찢어진 첫번쨰 날개" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="1" count="1" role="Hidden" rate="1" ReverseForward="true" Extinction="false" AcquisitionDifficulty="ex"/>
-	<card name="잠긴 두번쨰 날개" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="2" count="2" role="Hidden" rate="1" ReverseForward="true" Extinction="false" AcquisitionDifficulty="ex"/>
-	<card name="사슬에 감긴 세번쨰 날개" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="3" count="3" role="Hidden" rate="1" ReverseForward="true" Extinction="false" AcquisitionDifficulty="ex"/>
-	<card name="추락하는 네번째 날개" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="4" count="4" role="Hidden" rate="1" ReverseForward="true" Extinction="false" AcquisitionDifficulty="ex"/>
-	<card name="매달린 마지막 날개" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="5" count="5" role="Hidden" rate="1" ReverseForward="true" Extinction="false" AcquisitionDifficulty="ex"/>
-	<card name="봉인된 과거의 좌심" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="6" count="6" role="Hidden" rate="1" ReverseForward="true" Extinction="false" AcquisitionDifficulty="ex"/>
-	<card name="봉인된 미래의 우심" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="7" count="7" role="Hidden" rate="1" ReverseForward="true" Extinction="false" AcquisitionDifficulty="ex"/>
-	<card name="붉게 물든 가속의 동맥" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="8" count="8" role="Hidden" rate="1" ReverseForward="true" Extinction="false" AcquisitionDifficulty="ex"/>
-	<card name="창백히 질린 정지의 정맥" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="9" count="9" role="Hidden" rate="1" ReverseForward="true" Extinction="false" AcquisitionDifficulty="ex"/>
-	<card name="텅빈 심장의 인형" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="10" count="10" role="Hidden" rate="1" ReverseForward="true" Extinction="false" AcquisitionDifficulty="ex"/>
-	<card name="피로 뒤덥힌 왕가의 문장" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="11" count="11" role="Hidden" rate="1" ReverseForward="true" Extinction="false" AcquisitionDifficulty="ex"/>
-	<card name="성검의 검집" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="12" count="12" role="Hidden" rate="1" ReverseForward="true" Extinction="false" AcquisitionDifficulty="ex"/>
-	<card name="빛바랜 무뚝뚝한 도신" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="13" count="13" role="Hidden" rate="1" ReverseForward="true" Extinction="false" AcquisitionDifficulty="ex"/>
-	<card name="별의 파편" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="14" count="14" role="Hidden" rate="1" ReverseForward="true" Extinction="false" AcquisitionDifficulty="ex"/>
-	<card name="무한의 심장" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="15" count="15" role="Hidden" rate="1" ReverseForward="true" Extinction="false" AcquisitionDifficulty="ex"/>
-	<card name="녹슨 시침" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="16" count="16" role="Hidden" rate="1" ReverseForward="true" Extinction="false" AcquisitionDifficulty="ex"/>
-	<card name="부러진 분침" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="17" count="17" role="Hidden" rate="1" ReverseForward="true" Extinction="false" AcquisitionDifficulty="ex"/>
-	<card name="녹아내린 초침" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="18" count="18" role="Hidden" rate="1" ReverseForward="true" Extinction="false" AcquisitionDifficulty="ex"/>
-	<card name="찌그러진 구체의 형상의 태엽들" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="19" count="19" role="Hidden" rate="1" ReverseForward="true" Extinction="false" AcquisitionDifficulty="ex"/>
-	<card name="빛을 머금은 쿼크" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="20" count="20" role="Hidden" rate="1" ReverseForward="true" Extinction="false" AcquisitionDifficulty="ex"/>
-	<card name="폭군이 봉인된 엄지" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="21" count="21" role="Hidden" rate="1" ReverseForward="true" Extinction="false" AcquisitionDifficulty="ex"/>
-	<card name="폭군이 봉인된 검지" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="22" count="22" role="Hidden" rate="1" ReverseForward="true" Extinction="false" AcquisitionDifficulty="ex"/>
-	<card name="폭군이 봉인된 중지" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="23" count="23" role="Hidden" rate="1" ReverseForward="true" Extinction="false" AcquisitionDifficulty="ex"/>
-	<card name="폭군이 봉인된 약지" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="24" count="24" role="Hidden" rate="1" ReverseForward="true" Extinction="false" AcquisitionDifficulty="ex"/>
-	<card name="폭군이 봉인된 새끼손가락" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="25" count="25" role="Hidden" rate="1" ReverseForward="true" Extinction="false" AcquisitionDifficulty="ex"/>
-	<card name="허실(虛實)・ 망라(望臘)" description="세계(윤년)는 몇번이고 다시 시작한다" ID="4951" count="1" role="Spell" rate="6" ReverseForward="true" bearer="Player" AcquisitionDifficulty="ex"/>
-	<card name="창안(蒼眼)의사상편집자" description="별의 내해는 이를 근원으로 안내한다" ID="4952" count="2" role="Spell" rate="6" ReverseForward="true" bearer="나인" AcquisitionDifficulty="ex"/>
-	<card name="황혼(黄昏)의 달" description="모든 존재는 이 황혼의 찰나에 저문다" ID="4953" count="3" role="Spell" rate="6" ReverseForward="true" bearer="엘리시아" AcquisitionDifficulty="ex"/>
-	<card name="사의승형(写意胜形)" description="나락의 저편 심연에서 종말을 바라본다" ID="4954" count="4" role="Spell" rate="6" ReverseForward="true" bearer="시키" AcquisitionDifficulty="ex"/>
-	<card name="시간인지둔화(時間認知鈍化)" description="존재하는 모든 시간의 좌표는 오직 이곳으로 향하며 이곳에서 뒤석여 이곳에서 흩어진다." ID="4955" count="5" role="Spell" rate="6" ReverseForward="true" bearer="헤르틱스" AcquisitionDifficulty="ex"/>
-	<card name="시우아코아틀(神殺炎)" description="이 영원히 꺼지지 않는 불은, 반드시 신을 불태운다" ID="4956" count="6" role="Spell" rate="6" ReverseForward="true" bearer="노바" AcquisitionDifficulty="ex"/>
-	<card name="대침묵(大沈黙)" description="만물을 휘감싸는 거대한 해일은 문명을, 세계를 침묵에 심해로 이끈다" ID="4957" count="7" role="Spell" rate="6" ReverseForward="true" bearer="라임" AcquisitionDifficulty="ex"/>
-	<card name="의태(擬態)" description="포식한 상대를 한정으로 아주 완벽하게 대상의 모습을 흉내낼 수 있음" ID="4958" count="8" role="Spell" rate="6" ReverseForward="true" bearer="프로메테우스" AcquisitionDifficulty="ex"/>
-	<card name="멸염(滅炎)" description="아스테리우스가문의 상징과도 같은 생명을 불태우는 불꽃이다" ID="4959" count="9" role="Spell" rate="6" ReverseForward="true" bearer="라인하트" AcquisitionDifficulty="ex"/>
-	<card name="진약(真薬) ・ 불요한 명부의 비탄" description="일찍이 의술의 정점에 도달한 순간 린이 완성한 자신의 아츠와 지식의 결정채인 진정한 소생약" ID="4960" count="10" role="Spell" rate="6" ReverseForward="true" bearer="린" AcquisitionDifficulty="ex"/>
-	<card name="인도(導き)" description="대장의 자질에 가까운 무언가, 자신의 휘하에 있는 전원에게 자신의 가호를 부여" ID="4961" count="11" role="Spell" rate="6" ReverseForward="true" bearer="길버트" AcquisitionDifficulty="ex"/>
-	<card name="천리안(千里眼) ・존성(尊星)" description="존재하는 모든 과거와 미래는 그것에 비춰진다" ID="4962" count="12" role="Spell" rate="6" ReverseForward="true" bearer="라플라스" AcquisitionDifficulty="ex"/>
-	<card name="시뇨레 델 롬브라(陰影狼)" description="모든 빛과 색은 이어지고 끊어져 다시한번 경계를 가진다" ID="4963" count="13" role="Spell" rate="6" ReverseForward="true" bearer="이시스" AcquisitionDifficulty="ex"/>
-	<card name="천리안(千里眼) ・ 현제(玄帝)" description="모든 현재는 그것에 비춰진다" ID="4964" count="14" role="Spell" rate="6" ReverseForward="true" bearer="그레고리" AcquisitionDifficulty="ex"/>
-	<card name="붉은(赤) 달" description="모든 밤의 시간은 이 붉은 시선에 지배받는다" ID="4965" count="15" role="Spell" rate="6" ReverseForward="true" bearer="엘비앙스" AcquisitionDifficulty="ex"/>
-	<card name="독실한 음지의 육익(六翼)" description="음지에서 살아가며 양지를 지향한다" ID="4966" count="16" role="Spell" rate="6" ReverseForward="true" bearer="에덴" AcquisitionDifficulty="ex"/>
-	<card name="혁안(赫眼)의 인류증명자" description="이는 증명될리 없는 세계이다." ID="4967" count="17" role="Spell" rate="6" ReverseForward="True" bearer="이오리" AcquisitionDifficulty="ex"/>
-	<card name="언다인(不屈)" description="죽지 않을리가 없다. 그저 넘쳐흘르는 투지가 눈앞의 승리를 위해서라면, 사지를 넘어서라도 물러날 줄을 모르는 것 뿐" ID="4968" count="18" role="Spell" rate="6" ReverseForward="true" bearer="롤랑" AcquisitionDifficulty="ex"/>
-	<card name="라이어스 스탭(噓つきの踊り)" description="이의 모든 말은 거짓이다. 이의 모든 의도는 진실이다. 이는 마음을 잃어버렸다" ID="4969" count="19" role="Spell" rate="6" ReverseForward="true" bearer="안젤리카" AcquisitionDifficulty="ex"/>
-	<card name="팔악검태허지경(八握剣・太虚の鏡)" description="８개의 검이 남도되어있는 법진을 상시 등 뒤에 보유한다." ID="4970" count="20" role="Spell" rate="6" ReverseForward="true" bearer="아티카" AcquisitionDifficulty="ex"/>
-	<card name="잿빛세계(灰色世界)" description="별은 이것에게 자신의 분노를 심어두었다." ID="4971" count="21" role="Spell" rate="6" ReverseForward="true" bearer="유라드" AcquisitionDifficulty="ex"/>
-	<card name="생명의 물(命の泉)" description="한번은 죽음을 경험했던 여린 생명은 우연과 운명이 교차하는 순간생명력을 부여받았다." ID="4972" count="22" role="Spell" rate="6" ReverseForward="true" bearer="카렌" AcquisitionDifficulty="ex"/>
-	<card name="문을 두드리는자(門を叩く者）" description="그 어떤 제약도, 규칙도, 봉인도 그의 손짓 앞에선 무의미하다" ID="4973" count="23" role="Spell" rate="6" ReverseForward="true" bearer="유그람" AcquisitionDifficulty="ex"/>
-	<card name="별의 심장(星心臟)" description="존재하는 모든 광물은 이곳, 별의 심장에서 달궈져 무기의 형태를 가진다" ID="4974" count="24" role="Spell" rate="6" ReverseForward="true" bearer="엔" AcquisitionDifficulty="ex"/>
-	<card name="백아운몽(白婀雲夢)" description="그저 꿈과 같은 한순간이 그 곳에 있었다" ID="4975" count="25" role="Spell" rate="6" ReverseForward="true" bearer="레이" AcquisitionDifficulty="ex"/>
-	<card name="거룩한 사막의 눈(砂漠の目)" description="이는 모든 인류의 사랑을 업는자" ID="4976" count="26" role="Spell" rate="6" ReverseForward="true" bearer="완다" AcquisitionDifficulty="ex"/>
-	<card name="일상의 연속성" description="최악의멸망이 찾아오지 않는 당연한 일상이 이어지기 위해 한 맹세" ID="5051" count="1" rate="6" ReverseForward="false" bearer="나인,엘리시아,시키, 모스티마,피아메타, 라임"/>
-	<card name="멸망의 나팔" description="일상의 연속성으로 지속되는 세계를 끝내기 위해 존재하는 힘" ID="5052" count="2" rate="6" ReverseForward="false" bearer="나인,엘리시아,시키, 모스티마,피아메타, 라임, 이오리"/>
+	<card name="찢어진 첫번쨰 날개" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="1" count="1" role="Hidden" rate="1" ReverseForward="true" Extinction="false" bearer="Null" AcquisitionDifficulty="ex"/>
+	<card name="잠긴 두번쨰 날개" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="2" count="2" role="Hidden" rate="1" ReverseForward="true" Extinction="false" bearer="Null" AcquisitionDifficulty="ex"/>
+	<card name="사슬에 감긴 세번쨰 날개" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="3" count="3" role="Hidden" rate="1" ReverseForward="true" Extinction="false" bearer="Null" AcquisitionDifficulty="ex"/>
+	<card name="추락하는 네번째 날개" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="4" count="4" role="Hidden" rate="1" ReverseForward="true" Extinction="false" bearer="Null" AcquisitionDifficulty="ex"/>
+	<card name="매달린 마지막 날개" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="5" count="5" role="Hidden" rate="1" ReverseForward="true" Extinction="false" bearer="Null" AcquisitionDifficulty="ex"/>
+	<card name="봉인된 과거의 좌심" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="6" count="6" role="Hidden" rate="1" ReverseForward="true" Extinction="false" bearer="Null" AcquisitionDifficulty="ex"/>
+	<card name="봉인된 미래의 우심" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="7" count="7" role="Hidden" rate="1" ReverseForward="true" Extinction="false" bearer="Null" AcquisitionDifficulty="ex"/>
+	<card name="붉게 물든 가속의 동맥" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="8" count="8" role="Hidden" rate="1" ReverseForward="true" Extinction="false" bearer="Null" AcquisitionDifficulty="ex"/>
+	<card name="창백히 질린 정지의 정맥" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="9" count="9" role="Hidden" rate="1" ReverseForward="true" Extinction="false" bearer="Null" AcquisitionDifficulty="ex"/>
+	<card name="텅빈 심장의 인형" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="10" count="10" role="Hidden" rate="1" ReverseForward="true" Extinction="false" bearer="Null" AcquisitionDifficulty="ex"/>
+	<card name="피로 뒤덥힌 왕가의 문장" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="11" count="11" role="Hidden" rate="1" ReverseForward="true" Extinction="false" bearer="Null" AcquisitionDifficulty="ex"/>
+	<card name="성검의 검집" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="12" count="12" role="Hidden" rate="1" ReverseForward="true" Extinction="false" bearer="Null" AcquisitionDifficulty="ex"/>
+	<card name="빛바랜 무뚝뚝한 도신" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="13" count="13" role="Hidden" rate="1" ReverseForward="true" Extinction="false" bearer="Null" AcquisitionDifficulty="ex"/>
+	<card name="별의 파편" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="14" count="14" role="Hidden" rate="1" ReverseForward="true" Extinction="false" bearer="Null" AcquisitionDifficulty="ex"/>
+	<card name="무한의 심장" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="15" count="15" role="Hidden" rate="1" ReverseForward="true" Extinction="false" bearer="Null" AcquisitionDifficulty="ex"/>
+	<card name="녹슨 시침" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="16" count="16" role="Hidden" rate="1" ReverseForward="true" Extinction="false" bearer="Null" AcquisitionDifficulty="ex"/>
+	<card name="부러진 분침" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="17" count="17" role="Hidden" rate="1" ReverseForward="true" Extinction="false" bearer="Null" AcquisitionDifficulty="ex"/>
+	<card name="녹아내린 초침" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="18" count="18" role="Hidden" rate="1" ReverseForward="true" Extinction="false" bearer="Null" AcquisitionDifficulty="ex"/>
+	<card name="찌그러진 구체의 형상의 태엽들" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="19" count="19" role="Hidden" rate="1" ReverseForward="true" Extinction="false" bearer="Null" AcquisitionDifficulty="ex"/>
+	<card name="빛을 머금은 쿼크" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="20" count="20" role="Hidden" rate="1" ReverseForward="true" Extinction="false" bearer="Null" AcquisitionDifficulty="ex"/>
+	<card name="폭군이 봉인된 엄지" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="21" count="21" role="Hidden" rate="1" ReverseForward="true" Extinction="false" bearer="Null" AcquisitionDifficulty="ex"/>
+	<card name="폭군이 봉인된 검지" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="22" count="22" role="Hidden" rate="1" ReverseForward="true" Extinction="false" bearer="Null" AcquisitionDifficulty="ex"/>
+	<card name="폭군이 봉인된 중지" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="23" count="23" role="Hidden" rate="1" ReverseForward="true" Extinction="false" bearer="Null" AcquisitionDifficulty="ex"/>
+	<card name="폭군이 봉인된 약지" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="24" count="24" role="Hidden" rate="1" ReverseForward="true" Extinction="false" bearer="Null" AcquisitionDifficulty="ex"/>
+	<card name="폭군이 봉인된 새끼손가락" description="5장의 카드가 모이면 진정한 능력이 들어난다." ID="25" count="25" role="Hidden" rate="1" ReverseForward="true" Extinction="false" bearer="Null" AcquisitionDifficulty="ex"/>
+	<card name="허실(虛實)・ 망라(望臘)" description="세계(윤년)는 몇번이고 다시 시작한다" ID="4951" count="1" role="Spell" rate="6" ReverseForward="true" Extinction="false" bearer="Player" AcquisitionDifficulty="ex"/>
+	<card name="창안(蒼眼)의사상편집자" description="별의 내해는 이를 근원으로 안내한다" ID="4952" count="2" role="Spell" rate="6" ReverseForward="true" Extinction="false" bearer="나인" AcquisitionDifficulty="ex"/>
+	<card name="황혼(黄昏)의 달" description="모든 존재는 이 황혼의 찰나에 저문다" ID="4953" count="3" role="Spell" rate="6" ReverseForward="true" Extinction="false" bearer="엘리시아" AcquisitionDifficulty="ex"/>
+	<card name="사의승형(写意胜形)" description="나락의 저편 심연에서 종말을 바라본다" ID="4954" count="4" role="Spell" rate="6" ReverseForward="true" Extinction="false" bearer="시키" AcquisitionDifficulty="ex"/>
+	<card name="시간인지둔화(時間認知鈍化)" description="존재하는 모든 시간의 좌표는 오직 이곳으로 향하며 이곳에서 뒤석여 이곳에서 흩어진다." ID="4955" count="5" role="Spell" rate="6" ReverseForward="true" Extinction="false" bearer="헤르틱스" AcquisitionDifficulty="ex"/>
+	<card name="시우아코아틀(神殺炎)" description="이 영원히 꺼지지 않는 불은, 반드시 신을 불태운다" ID="4956" count="6" role="Spell" rate="6" ReverseForward="true" Extinction="false" bearer="노바" AcquisitionDifficulty="ex"/>
+	<card name="대침묵(大沈黙)" description="만물을 휘감싸는 거대한 해일은 문명을, 세계를 침묵에 심해로 이끈다" ID="4957" count="7" role="Spell" rate="6" ReverseForward="true" Extinction="false" bearer="라임" AcquisitionDifficulty="ex"/>
+	<card name="의태(擬態)" description="포식한 상대를 한정으로 아주 완벽하게 대상의 모습을 흉내낼 수 있음" ID="4958" count="8" role="Spell" rate="6" ReverseForward="true" Extinction="false" bearer="프로메테우스" AcquisitionDifficulty="ex"/>
+	<card name="멸염(滅炎)" description="아스테리우스가문의 상징과도 같은 생명을 불태우는 불꽃이다" ID="4959" count="9" role="Spell" rate="6" ReverseForward="true" Extinction="false" bearer="라인하트" AcquisitionDifficulty="ex"/>
+	<card name="진약(真薬) ・ 불요한 명부의 비탄" description="일찍이 의술의 정점에 도달한 순간 린이 완성한 자신의 아츠와 지식의 결정채인 진정한 소생약" ID="4960" count="10" role="Spell" rate="6" ReverseForward="true" Extinction="false" bearer="린" AcquisitionDifficulty="ex"/>
+	<card name="인도(導き)" description="대장의 자질에 가까운 무언가, 자신의 휘하에 있는 전원에게 자신의 가호를 부여" ID="4961" count="11" role="Spell" rate="6" ReverseForward="true" Extinction="false" bearer="길버트" AcquisitionDifficulty="ex"/>
+	<card name="천리안(千里眼) ・존성(尊星)" description="존재하는 모든 과거와 미래는 그것에 비춰진다" ID="4962" count="12" role="Spell" rate="6" ReverseForward="true" Extinction="false" bearer="라플라스" AcquisitionDifficulty="ex"/>
+	<card name="시뇨레 델 롬브라(陰影狼)" description="모든 빛과 색은 이어지고 끊어져 다시한번 경계를 가진다" ID="4963" count="13" role="Spell" rate="6" ReverseForward="true" Extinction="false" bearer="이시스" AcquisitionDifficulty="ex"/>
+	<card name="천리안(千里眼) ・ 현제(玄帝)" description="모든 현재는 그것에 비춰진다" ID="4964" count="14" role="Spell" rate="6" ReverseForward="true" Extinction="false" bearer="그레고리" AcquisitionDifficulty="ex"/>
+	<card name="붉은(赤) 달" description="모든 밤의 시간은 이 붉은 시선에 지배받는다" ID="4965" count="15" role="Spell" rate="6" ReverseForward="true" Extinction="false" bearer="엘비앙스" AcquisitionDifficulty="ex"/>
+	<card name="독실한 음지의 육익(六翼)" description="음지에서 살아가며 양지를 지향한다" ID="4966" count="16" role="Spell" rate="6" ReverseForward="true" Extinction="false" bearer="에덴" AcquisitionDifficulty="ex"/>
+	<card name="혁안(赫眼)의 인류증명자" description="이는 증명될리 없는 세계이다." ID="4967" count="17" role="Spell" rate="6" ReverseForward="True" Extinction="false" bearer="이오리" AcquisitionDifficulty="ex"/>
+	<card name="언다인(不屈)" description="죽지 않을리가 없다. 그저 넘쳐흘르는 투지가 눈앞의 승리를 위해서라면, 사지를 넘어서라도 물러날 줄을 모르는 것 뿐" ID="4968" count="18" role="Spell" rate="6" ReverseForward="true" Extinction="false" bearer="롤랑" AcquisitionDifficulty="ex"/>
+	<card name="라이어스 스탭(噓つきの踊り)" description="이의 모든 말은 거짓이다. 이의 모든 의도는 진실이다. 이는 마음을 잃어버렸다" ID="4969" count="19" role="Spell" rate="6" ReverseForward="true" Extinction="false" bearer="안젤리카" AcquisitionDifficulty="ex"/>
+	<card name="팔악검태허지경(八握剣・太虚の鏡)" description="８개의 검이 남도되어있는 법진을 상시 등 뒤에 보유한다." ID="4970" count="20" role="Spell" rate="6" ReverseForward="true" Extinction="false" bearer="아티카" AcquisitionDifficulty="ex"/>
+	<card name="잿빛세계(灰色世界)" description="별은 이것에게 자신의 분노를 심어두었다." ID="4971" count="21" role="Spell" rate="6" ReverseForward="true" Extinction="false" bearer="유라드" AcquisitionDifficulty="ex"/>
+	<card name="생명의 물(命の泉)" description="한번은 죽음을 경험했던 여린 생명은 우연과 운명이 교차하는 순간생명력을 부여받았다." ID="4972" count="22" role="Spell" rate="6" ReverseForward="true" Extinction="false" bearer="카렌" AcquisitionDifficulty="ex"/>
+	<card name="문을 두드리는자(門を叩く者）" description="그 어떤 제약도, 규칙도, 봉인도 그의 손짓 앞에선 무의미하다" ID="4973" count="23" role="Spell" rate="6" ReverseForward="true" Extinction="false" bearer="유그람" AcquisitionDifficulty="ex"/>
+	<card name="별의 심장(星心臟)" description="존재하는 모든 광물은 이곳, 별의 심장에서 달궈져 무기의 형태를 가진다" ID="4974" count="24" role="Spell" rate="6" ReverseForward="true" Extinction="false" bearer="엔" AcquisitionDifficulty="ex"/>
+	<card name="백아운몽(白婀雲夢)" description="그저 꿈과 같은 한순간이 그 곳에 있었다" ID="4975" count="25" role="Spell" rate="6" ReverseForward="true" Extinction="false" bearer="레이" AcquisitionDifficulty="ex"/>
+	<card name="거룩한 사막의 눈(砂漠の目)" description="이는 모든 인류의 사랑을 업는자" ID="4976" count="26" role="Spell" rate="6" ReverseForward="true" Extinction="false" bearer="완다" AcquisitionDifficulty="ex"/>
+	<card name="일상의 연속성" description="최악의멸망이 찾아오지 않는 당연한 일상이 이어지기 위해 한 맹세" ID="5051" count="1" role="Hidden" rate="6" ReverseForward="false" Extinction="false" bearer="나인,엘리시아,시키, 모스티마,피아메타, 라임" AcquisitionDifficulty="ex"/>
+	<card name="멸망의 나팔" description="일상의 연속성으로 지속되는 세계를 끝내기 위해 존재하는 힘" ID="5052" count="2" role="Hidden" rate="6" ReverseForward="false" Extinction="false" bearer="나인,엘리시아,시키, 모스티마,피아메타, 라임, 이오리" AcquisitionDifficulty="ex"/>
 </Card>
