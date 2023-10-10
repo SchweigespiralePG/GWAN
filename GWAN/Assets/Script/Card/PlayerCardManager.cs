@@ -24,6 +24,7 @@ public class PlayerCardManager : MonoBehaviour
 
     // 스탯 데이터를 저장할 리스트를 생성합니다.
     public List<PlayerCard> playercard = new List<PlayerCard>();
+    public List<PlayerCard> cards = new List<PlayerCard>(); // cards 리스트를 생성합니다.
 
     public List<int> HaveCard = new List<int>();
 
@@ -33,6 +34,7 @@ public class PlayerCardManager : MonoBehaviour
         dataManager = DataManager.instance;
         HaveCard = dataManager.NowPlayerData.HaveCard;
         LoadStatsFromXML();
+        AddMatchingCardsToCardsList(HaveCard);
     }
 
     // XML 파일에서 스탯 데이터를 읽어와 리스트에 저장하는 메서드입니다.
@@ -72,6 +74,27 @@ public class PlayerCardManager : MonoBehaviour
             // PlayerCard를 playercard 리스트에 추가합니다.
             playercard.Add(card);
         }
+    }
+
+    private List<PlayerCard> FindMatchingCards(List<int> ids)
+    {
+        List<PlayerCard> matchingCards = new List<PlayerCard>();
+        foreach (int id in ids)
+        {
+            PlayerCard matchingCard = playercard.Find(card => card.ID == id);
+            if (matchingCard.ID == id)
+            {
+                matchingCards.Add(matchingCard);
+            }
+        }
+        return matchingCards;
+    }
+
+    // 리스트에 일치하는 카드를 추가하는 함수
+    private void AddMatchingCardsToCardsList(List<int> ids)
+    {
+        List<PlayerCard> matchingCards = FindMatchingCards(ids);
+        cards.AddRange(matchingCards);
     }
 
 }

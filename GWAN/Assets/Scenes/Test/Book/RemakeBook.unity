@@ -996,7 +996,7 @@ GameObject:
   - component: {fileID: 565641810}
   - component: {fileID: 565641809}
   m_Layer: 5
-  m_Name: Button (Legacy) (7)
+  m_Name: Button 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1066,7 +1066,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 565641810}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 771237211}
+        m_TargetAssemblyTypeName: CardManager, Assembly-CSharp
+        m_MethodName: CardButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &565641810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1118,7 +1130,7 @@ GameObject:
   - component: {fileID: 621386112}
   - component: {fileID: 621386111}
   m_Layer: 5
-  m_Name: Button (Legacy) (4)
+  m_Name: Button 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1188,7 +1200,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 621386112}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 771237211}
+        m_TargetAssemblyTypeName: CardManager, Assembly-CSharp
+        m_MethodName: CardButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &621386112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1312,6 +1336,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 771237210}
+  - component: {fileID: 771237211}
   m_Layer: 0
   m_Name: Book
   m_TagString: Untagged
@@ -1336,6 +1361,19 @@ Transform:
   m_Father: {fileID: 1840864002}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &771237211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771237209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52015e7373c79934684660684bcc7fa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cards: []
 --- !u!1 &834830796
 GameObject:
   m_ObjectHideFlags: 0
@@ -1972,7 +2010,7 @@ GameObject:
   - component: {fileID: 1365279823}
   - component: {fileID: 1365279822}
   m_Layer: 5
-  m_Name: Button (Legacy) (2)
+  m_Name: Button 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2042,7 +2080,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1365279823}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 771237211}
+        m_TargetAssemblyTypeName: CardManager, Assembly-CSharp
+        m_MethodName: CardButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1365279823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2094,7 +2144,7 @@ GameObject:
   - component: {fileID: 1524384933}
   - component: {fileID: 1524384932}
   m_Layer: 5
-  m_Name: Button (Legacy) (3)
+  m_Name: Button 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2164,7 +2214,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1524384933}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 771237211}
+        m_TargetAssemblyTypeName: CardManager, Assembly-CSharp
+        m_MethodName: CardButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1524384933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2292,7 +2354,7 @@ GameObject:
   - component: {fileID: 1559438307}
   - component: {fileID: 1559438306}
   m_Layer: 5
-  m_Name: Button (Legacy) (6)
+  m_Name: Button 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2362,7 +2424,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1559438307}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 771237211}
+        m_TargetAssemblyTypeName: CardManager, Assembly-CSharp
+        m_MethodName: CardButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1559438307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2768,7 +2842,7 @@ GameObject:
   - component: {fileID: 1669640639}
   - component: {fileID: 1669640638}
   m_Layer: 5
-  m_Name: Button (Legacy) (1)
+  m_Name: Button 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2838,7 +2912,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1669640639}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 771237211}
+        m_TargetAssemblyTypeName: CardManager, Assembly-CSharp
+        m_MethodName: CardButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1669640639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3027,6 +3113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playercard: []
+  cards: []
   HaveCard: 
 --- !u!4 &1751382986
 Transform:
@@ -3380,7 +3467,7 @@ GameObject:
   - component: {fileID: 1982648093}
   - component: {fileID: 1982648092}
   m_Layer: 5
-  m_Name: Button (Legacy) (5)
+  m_Name: Button 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3450,7 +3537,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1982648093}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 771237211}
+        m_TargetAssemblyTypeName: CardManager, Assembly-CSharp
+        m_MethodName: CardButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1982648093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3502,7 +3601,7 @@ GameObject:
   - component: {fileID: 2055335071}
   - component: {fileID: 2055335070}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: Button0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3624,7 +3723,7 @@ GameObject:
   - component: {fileID: 2114397269}
   - component: {fileID: 2114397268}
   m_Layer: 5
-  m_Name: Button (Legacy) (8)
+  m_Name: Button 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3694,7 +3793,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2114397269}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 771237211}
+        m_TargetAssemblyTypeName: CardManager, Assembly-CSharp
+        m_MethodName: CardButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2114397269
 MonoBehaviour:
   m_ObjectHideFlags: 0

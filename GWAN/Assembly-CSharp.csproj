@@ -85,6 +85,8 @@
     <Compile Include="Assets\Script\MapScrpts\Event\BattleEvent.cs" />
     <Compile Include="Assets\Script\Settings\GameSettings.cs" />
     <Compile Include="Assets\Script\MapScrpts\Move\PlayerMove.cs" />
+    <Compile Include="Assets\Script\Card\CardManager.cs" />
+    <Compile Include="Assets\Script\Card\CardButtonManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
