@@ -7,15 +7,15 @@ using Palmmedia.ReportGenerator.Core.Reporting.Builders;
 public class PlayerData
 {
     //저장이름
-    public string DataName;
+    public string DataName = $"마지막 위치 ";
 
     //현재가지고 있는카드
 
-    public List<int> HaveCard = new List<int>() { 51, 52, 53, 54, 55, 56, 57, 58, 59, 60 };
+    public List<int> HaveCard = new List<int>() { 51, 52, 53, 54, 55, 56, 57, 58, 59};
 
     //스테이터스
     public int ID = 0;
-    public string Name = "응애";
+    public string Name = "";
     public int Str = 10;
     public int Con = 10;
     public int Size = 10;
@@ -33,12 +33,13 @@ public class PlayerData
     //위치
     public Vector3 PlayerPosition;
 
-    //스테이지
-    public List<int> stageValue = new List<int>();
+    //스테이지, 난이도
+    public int Level;
+    public int Act;
 
-    //방문여부
+    //이벤트방문여부
 
-    public List<int> visitValue = new List<int>();
+    public List<int> eventvisitValue = new List<int>();
 
 }
 
@@ -74,7 +75,7 @@ public class DataManager : MonoBehaviour
 
     public void DataClear()
     {
-        SaveDataNumber = -1;
+        SaveDataNumber = 0;
         NowPlayerData = new PlayerData();
     }
 }

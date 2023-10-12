@@ -372,6 +372,7 @@
 "Assets/Script/MapScrpts/Viewer/HexatileViewer.cs"
 "Assets/Script/Menu/M_MenuButtonSystem.cs"
 "Assets/Script/Menu/SettingsMenu.cs"
+"Assets/Script/SaveData/DataCreat/StartSelect.cs"
 "Assets/Script/SaveData/DataManager.cs"
 "Assets/Script/SaveData/Save/Selet.cs"
 "Assets/Script/Scene Load/LevelLoader.cs"

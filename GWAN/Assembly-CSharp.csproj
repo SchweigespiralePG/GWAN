@@ -69,13 +69,16 @@
     <Compile Include="Assets\Script\GameManager\Status\Stat.cs" />
     <Compile Include="Assets\Script\MapScrpts\Map\HexTile.cs" />
     <Compile Include="Assets\Script\SaveData\DataManager.cs" />
+    <Compile Include="Assets\Script\Card\CardManager.cs" />
     <Compile Include="Assets\Script\GameManager\battle\ATK\attack.cs" />
+    <Compile Include="Assets\Script\Card\CardButtonManager.cs" />
     <Compile Include="Assets\Script\MapScrpts\Event\ConversationEvent.cs" />
     <Compile Include="Assets\Script\Card\PlayerCardManager.cs" />
     <Compile Include="Assets\Script\GameManager\battle\UI\HpBar.cs" />
     <Compile Include="Assets\Script\GameManager\battle\Enemy\EnemyPattern.cs" />
     <Compile Include="Assets\Script\Vertex\FixedVertex.cs" />
     <Compile Include="Assets\Script\MapScrpts\Viewer\HexatileViewer.cs" />
+    <Compile Include="Assets\Script\SaveData\DataCreat\StartSelect.cs" />
     <Compile Include="Assets\Script\Menu\M_MenuButtonSystem.cs" />
     <Compile Include="Assets\Script\camera\CameraManager.cs" />
     <Compile Include="Assets\Script\Conversation\ConversationManager.cs" />
@@ -85,8 +88,6 @@
     <Compile Include="Assets\Script\MapScrpts\Event\BattleEvent.cs" />
     <Compile Include="Assets\Script\Settings\GameSettings.cs" />
     <Compile Include="Assets\Script\MapScrpts\Move\PlayerMove.cs" />
-    <Compile Include="Assets\Script\Card\CardManager.cs" />
-    <Compile Include="Assets\Script\Card\CardButtonManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
