@@ -2,7 +2,10 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Xml;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
+using static PlayerCardManager;
 
 public class PlayerCardManager : MonoBehaviour
 {
@@ -21,6 +24,9 @@ public class PlayerCardManager : MonoBehaviour
         public string AcquisitionDifficulty;
     }
 
+    public GameObject Details;
+
+    public List<Text>textboxs = new List<Text>();
 
     // 스탯 데이터를 저장할 리스트를 생성합니다.
     public List<PlayerCard> playercard = new List<PlayerCard>();
@@ -95,6 +101,18 @@ public class PlayerCardManager : MonoBehaviour
     {
         List<PlayerCard> matchingCards = FindMatchingCards(ids);
         cards.AddRange(matchingCards);
+    }
+
+    public void cardbutton(int number)
+    {
+        Details.SetActive(true);
+        if (textboxs.Count > 3)
+        {
+            textboxs[0].text = "NO." + cards[number].ID.ToString();
+            textboxs[1].text = cards[number].name;
+            textboxs[2].text = cards[number].role;
+            textboxs[3].text = cards[number].description;
+        }
     }
 
 }
