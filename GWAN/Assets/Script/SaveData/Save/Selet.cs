@@ -17,6 +17,7 @@ public class Selet : MonoBehaviour
 
     void Start()
     {
+        Debug.Log(DataManager.instance.Route);
         for (int i = 0; i < 4; i++)
         {
 
@@ -25,7 +26,7 @@ public class Selet : MonoBehaviour
                 savefile[i] = true;
                 DataManager.instance.SaveDataNumber = i;
                 DataManager.instance.LoadData();
-                slotText[i].text = DataManager.instance.NowPlayerData.DataName;
+                slotText[i].text = DataManager.instance.NowPlayerData.DataName + "   ACT : " + DataManager.instance.NowPlayerData.Act;
             }
             else
             {
