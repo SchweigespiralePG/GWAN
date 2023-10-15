@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Xml;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.UI;
 using static PlayerCardManager;
 
@@ -22,19 +23,23 @@ public class PlayerCardManager : MonoBehaviour
         public bool Extinction;
         public string bearer;
         public string AcquisitionDifficulty;
+        public string Url;
     }
 
     public GameObject Details;
-
     public List<Text>textboxs = new List<Text>();
 
     // 스탯 데이터를 저장할 리스트를 생성합니다.
     public List<PlayerCard> playercard = new List<PlayerCard>();
     public List<PlayerCard> cards = new List<PlayerCard>(); // cards 리스트를 생성합니다.
-
+    public List<RawImage> cardimg = new List<RawImage>();
+    public List<RawImage> descriptionimg = new List<RawImage>();
     public List<int> HaveCard = new List<int>();
+    public List<GameObject> stars= new List<GameObject>();
+    public List<GameObject> descriptionimgobj = new List<GameObject>();
 
     private DataManager dataManager;
+    public static PlayerCardManager instance;
     private void Start()
     {
         dataManager = DataManager.instance;
@@ -76,6 +81,7 @@ public class PlayerCardManager : MonoBehaviour
             card.Extinction = bool.Parse(cardNode.Attributes["Extinction"].Value);
             card.bearer = cardNode.Attributes["bearer"].Value;
             card.AcquisitionDifficulty = cardNode.Attributes["AcquisitionDifficulty"].Value;
+            card.Url = cardNode.Attributes["url"].Value;
 
             // PlayerCard를 playercard 리스트에 추가합니다.
             playercard.Add(card);
@@ -101,7 +107,33 @@ public class PlayerCardManager : MonoBehaviour
     {
         List<PlayerCard> matchingCards = FindMatchingCards(ids);
         cards.AddRange(matchingCards);
+
+        StartCoroutine(LoadCardImages());
     }
+
+    private IEnumerator LoadCardImages()
+    {
+        for (int i = 0; i < cardimg.Count; i++)
+        {
+            if (cards[i].Url != "null")
+            {
+                UnityWebRequest www = UnityWebRequestTexture.GetTexture(cards[i].Url);
+                yield return www.SendWebRequest();
+
+                if (www.result != UnityWebRequest.Result.Success)
+                {
+                    Debug.LogError("이미지 로드 중 에러 발생: " + www.error);
+                }
+                else
+                {
+                    descriptionimg[i].texture = ((DownloadHandlerTexture)www.downloadHandler).texture;
+                    cardimg[i].texture = ((DownloadHandlerTexture)www.downloadHandler).texture;
+                    Debug.Log($"변경완료{i}번카드");
+                }
+            }
+        }
+    }
+
 
     public void cardbutton(int number)
     {
@@ -112,7 +144,21 @@ public class PlayerCardManager : MonoBehaviour
             textboxs[1].text = cards[number].name;
             textboxs[2].text = cards[number].role;
             textboxs[3].text = cards[number].description;
+
+            descriptionimgobj.ForEach(img => img.SetActive(false));
+            stars.ForEach(star => star.SetActive(false));
+            for (int i = 0;i < cards[number].rate; i++)
+            {
+                stars[i].SetActive(true);
+            }
+            descriptionimgobj[number].SetActive(true);
+
+
+
         }
     }
+
+
+
 
 }

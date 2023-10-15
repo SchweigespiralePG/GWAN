@@ -85,6 +85,9 @@
     <Compile Include="Assets\Script\MapScrpts\Event\BattleEvent.cs" />
     <Compile Include="Assets\Script\Settings\GameSettings.cs" />
     <Compile Include="Assets\Script\MapScrpts\Move\PlayerMove.cs" />
+    <Compile Include="Assets\Script\ButtonEvents\ButtonLongPressListener.cs" />
+    <Compile Include="Assets\Script\ButtonEvents\ButtonDoubleClickListener.cs" />
+    <Compile Include="Assets\Script\Card\UseCard.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -13,29 +13,22 @@ public class TurnManager : MonoBehaviour
     public GameObject BattleUI;
 
     public int playerspeed;
-    public List<int> TurnOrder;
-    private int TurnDexDecrease;
-    private int AvgDex = 0;
+    public int TurnDexDecrease;
+    public int AvgDex = 0;
 
-    private bool isPlayerATurn = false;
+    public bool isPlayerATurn = false;
 
     public static TurnManager instance;
 
-    private void Start()
-    {
-        
-
-    }
 
     public void IsBattle()
     {
         playerspeed = DataManager.instance.NowPlayerData.Dex;
-        AvgDex = enemys.Sum(enemyStat => enemyStat.enemyStats.Dex);
+        AvgDex = AvgDex = enemys.Sum(enemyStat => enemyStat.enemyStats.Dex)/enemys.Count();
 
-        int player = playerspeed;
-        TurnDexDecrease = Math.Min(AvgDex, player);
+        TurnDexDecrease = Math.Min(AvgDex, playerspeed);
 
-        if (TurnDexDecrease == player)
+        if (TurnDexDecrease == playerspeed)
         {
             isPlayerATurn = true;
             Debug.Log("플레이어 A의 Dex가 더 작거나 같습니다.");
@@ -66,6 +59,7 @@ public class TurnManager : MonoBehaviour
 
     public void PlayerTurn()
     {
+        Debug.Log("플레이어턴");
         playerbattledisplay.SetActive(true);
 
     }
@@ -79,5 +73,10 @@ public class TurnManager : MonoBehaviour
     public void EnemyTurn()
     {
 
+    }
+    public void EnemyTurnEnd()
+    {
+        isPlayerATurn = true;
+        StartTurn();
     }
 }
