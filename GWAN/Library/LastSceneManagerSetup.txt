@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Test/Battle/battle.unity
+- path: Assets/Scenes/Test/Map/Test(Default).unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
