@@ -69,11 +69,14 @@
     <Compile Include="Assets\Script\MapScrpts\Map\HexTile.cs" />
     <Compile Include="Assets\Script\SaveData\DataManager.cs" />
     <Compile Include="Assets\Script\Card\CardDescription.cs" />
+    <Compile Include="Assets\Script\ButtonEvents\ButtonLongPressListener.cs" />
     <Compile Include="Assets\Script\MapScrpts\Event\ConversationEvent.cs" />
     <Compile Include="Assets\Script\Card\PlayerCardManager.cs" />
     <Compile Include="Assets\Script\GameManager\battle\UI\HpBar.cs" />
+    <Compile Include="Assets\Script\ButtonEvents\ButtonDoubleClickListener.cs" />
     <Compile Include="Assets\Script\Vertex\FixedVertex.cs" />
     <Compile Include="Assets\Script\MapScrpts\Viewer\HexatileViewer.cs" />
+    <Compile Include="Assets\Script\Card\UseCard.cs" />
     <Compile Include="Assets\Script\SaveData\DataCreat\StartSelect.cs" />
     <Compile Include="Assets\Script\Menu\M_MenuButtonSystem.cs" />
     <Compile Include="Assets\Script\camera\CameraManager.cs" />
@@ -85,9 +88,6 @@
     <Compile Include="Assets\Script\MapScrpts\Event\BattleEvent.cs" />
     <Compile Include="Assets\Script\Settings\GameSettings.cs" />
     <Compile Include="Assets\Script\MapScrpts\Move\PlayerMove.cs" />
-    <Compile Include="Assets\Script\ButtonEvents\ButtonLongPressListener.cs" />
-    <Compile Include="Assets\Script\ButtonEvents\ButtonDoubleClickListener.cs" />
-    <Compile Include="Assets\Script\Card\UseCard.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

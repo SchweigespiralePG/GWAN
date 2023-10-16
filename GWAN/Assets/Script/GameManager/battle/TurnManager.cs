@@ -66,6 +66,7 @@ public class TurnManager : MonoBehaviour
 
     public void PlayerTutnEnd()
     {
+        Debug.Log("≈œ¡æ∑·");
         isPlayerATurn = false;
         StartTurn();
     }

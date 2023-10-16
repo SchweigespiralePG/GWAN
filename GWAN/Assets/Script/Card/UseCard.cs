@@ -5,6 +5,8 @@ using UnityEngine;
 public class UseCard : MonoBehaviour
 {
     public GameObject book;
+    public TurnManager turnManager;
+    public PlayerCardManager playerCardManager;
 
     private bool selectionModeActive = false;
 
@@ -36,7 +38,7 @@ public class UseCard : MonoBehaviour
         Debug.Log("카드버튼 작동");
         book.SetActive(false);
         atk();
-        switch (PlayerCardManager.instance.cards[buttonNumber].ID)
+        switch (playerCardManager.cards[buttonNumber].ID)
         {
             case 51:
                 break;
@@ -64,9 +66,9 @@ public class UseCard : MonoBehaviour
 
     public void atk()
     {
-
+        turnManager.enemys[0].enemyStats.RHp -= 3;
         selectionModeActive = !selectionModeActive;
-        TurnManager.instance.PlayerTutnEnd();
+        turnManager.PlayerTutnEnd();
     }
 
 
