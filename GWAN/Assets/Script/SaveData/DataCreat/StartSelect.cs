@@ -68,7 +68,7 @@ public class StartSelect : MonoBehaviour
         DataManager.instance.SaveData();
         Debug.Log("저장완료 act : " + act + " level : " + level + " Name : " + DataManager.instance.NowPlayerData.DataName);
         Debug.Log("저장경로 : " + DataManager.instance.Route);
-        //SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene("Test(Default)");
     }
 
     public void Noselect()
