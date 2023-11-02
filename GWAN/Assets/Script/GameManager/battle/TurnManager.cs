@@ -20,7 +20,6 @@ public class TurnManager : MonoBehaviour
 
     public static TurnManager instance;
 
-
     public void IsBattle()
     {
         playerspeed = DataManager.instance.NowPlayerData.Dex;

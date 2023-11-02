@@ -78,6 +78,7 @@
     <Compile Include="Assets\Script\MapScrpts\Viewer\HexatileViewer.cs" />
     <Compile Include="Assets\Script\Card\UseCard.cs" />
     <Compile Include="Assets\Script\SaveData\DataCreat\StartSelect.cs" />
+    <Compile Include="Assets\Script\Book\OnBook.cs" />
     <Compile Include="Assets\Script\Menu\M_MenuButtonSystem.cs" />
     <Compile Include="Assets\Script\camera\CameraManager.cs" />
     <Compile Include="Assets\Script\GameManager\battle\Enemy\EnemyStat.cs" />
