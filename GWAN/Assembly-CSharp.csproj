@@ -61,6 +61,7 @@
     <Compile Include="Assets\Script\MapScrpts\Map\PlayerHexTile.cs" />
     <Compile Include="Assets\Script\SaveData\Save\Selet.cs" />
     <Compile Include="Assets\Script\MapScrpts\Event\DiscoveryEvent.cs" />
+    <Compile Include="Assets\Script\GameManager\battle\UI\EnemyHpBar.cs" />
     <Compile Include="Assets\Script\Settings\SettingManager.cs" />
     <Compile Include="Assets\Script\MapScrpts\Utillty\HexGridUtility.cs" />
     <Compile Include="Assets\Script\Vertex\VertexLoader.cs" />

@@ -11,6 +11,11 @@ public class EnemyStat : MonoBehaviour
     public bool IsDead;
     private void Start()
     {
+        Invoke("lord", 0.5f);
+    }
+    void lord()
+    {
         enemyStats = StatManager.statsList[EnemyID];
+
     }
 }

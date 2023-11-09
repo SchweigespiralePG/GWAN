@@ -360,6 +360,7 @@
 "Assets/Script/GameManager/battle/BattleManager.cs"
 "Assets/Script/GameManager/battle/Enemy/EnemyStat.cs"
 "Assets/Script/GameManager/battle/TurnManager.cs"
+"Assets/Script/GameManager/battle/UI/EnemyHpBar.cs"
 "Assets/Script/GameManager/battle/UI/HpBar.cs"
 "Assets/Script/GameManager/Status/PlayerStat.cs"
 "Assets/Script/GameManager/Status/StatManager.cs"
