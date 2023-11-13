@@ -2065,13 +2065,14 @@ GameObject:
   - component: {fileID: 276361393}
   - component: {fileID: 276361392}
   - component: {fileID: 276361391}
+  - component: {fileID: 276361394}
   m_Layer: 5
   m_Name: BookUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &276361390
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2155,6 +2156,20 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &276361394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276361389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df6c17ab74696e04f9ceee53a89ec58f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Book: {fileID: 236245354}
+  BookSwitch: 0
 --- !u!1 &287576807
 GameObject:
   m_ObjectHideFlags: 0
@@ -4886,7 +4901,7 @@ MonoBehaviour:
   enemys:
   - {fileID: 1394159906}
   playerbattledisplay: {fileID: 461838291}
-  BattleUI: {fileID: 236245354}
+  BattleUI: {fileID: 276361389}
   playerspeed: 0
   TurnDexDecrease: 0
   AvgDex: 0
