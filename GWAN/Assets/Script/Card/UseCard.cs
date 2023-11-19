@@ -29,6 +29,10 @@ public class UseCard : MonoBehaviour
 
                         // 여기서 선택한 적(타겟)에 대한 추가 작업을 수행
                     }
+                    else
+                    {
+                        Debug.Log("적이 아님");
+                    }
                 }
             }
         }
@@ -68,6 +72,7 @@ public class UseCard : MonoBehaviour
     {
         turnManager.enemys[0].enemyStats.RHp -= 3;
         selectionModeActive = !selectionModeActive;
+        turnManager.gobjenemysEnemyHp[0].UpdateHpBar();
         turnManager.PlayerTutnEnd();
     }
 

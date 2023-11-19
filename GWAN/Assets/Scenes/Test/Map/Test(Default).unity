@@ -2296,7 +2296,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9acac00dfdf9064408c6837100734d6a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9acac00dfdf9064408c6837100734d6a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2328,6 +2328,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9acac00dfdf9064408c6837100734d6a, type: 3}
       propertyPath: m_Name
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9acac00dfdf9064408c6837100734d6a, type: 3}
+      propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 6868716418057165105, guid: 9acac00dfdf9064408c6837100734d6a, type: 3}
@@ -4900,6 +4904,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemys:
   - {fileID: 1394159906}
+  gobjenemysEnemyHp:
+  - {fileID: 1394159907}
   playerbattledisplay: {fileID: 461838291}
   BattleUI: {fileID: 276361389}
   playerspeed: 0

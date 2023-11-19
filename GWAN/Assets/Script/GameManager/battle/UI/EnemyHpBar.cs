@@ -9,6 +9,8 @@ public class EnemyHpBar : MonoBehaviour
     private Slider Hpber;
     public EnemyStat Enemystat;
 
+    public static EnemyHpBar Instance;
+
     public string Enemyname;
     public float maxHp;
     public float curHp;
@@ -38,12 +40,13 @@ public class EnemyHpBar : MonoBehaviour
         Hpber.value = curHp / maxHp;
     }
 
-    void UpdateHpBar()
+    public void UpdateHpBar()
     {
         maxHp = Enemystat.enemyStats.Hp;
         curHp = Enemystat.enemyStats.RHp;
         // 보간된 값을 사용하여 HP 바를 부드럽게 업데이트합니다.
-        float targetValue = curHp / maxHp;
-        Hpber.value = Mathf.Lerp(Hpber.value, targetValue, Time.deltaTime * hpUpdateSpeed);
+        Hpber.value = curHp / maxHp;
+        //float targetValue = (float)curHp / (float)maxHp;
+        //Hpber.value = Mathf.Lerp(Hpber.value, targetValue, Time.deltaTime * hpUpdateSpeed);
     }
 }

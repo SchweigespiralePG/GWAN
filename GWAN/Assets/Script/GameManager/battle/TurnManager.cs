@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class TurnManager : MonoBehaviour
 {
     public List<EnemyStat> enemys = new List<EnemyStat>();
+    public List<EnemyHpBar> gobjenemysEnemyHp = new List<EnemyHpBar>();
 
     public GameObject playerbattledisplay;
     public GameObject BattleUI;
