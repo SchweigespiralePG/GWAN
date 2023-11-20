@@ -35,6 +35,9 @@ public class StatManager : MonoBehaviour
     // 스탯 데이터를 저장할 리스트를 생성합니다.
     public List<CharacterStats> statsList = new List<CharacterStats>();
 
+
+    public static StatManager instance;
+
     private void Start()
     {
         try
@@ -90,81 +93,6 @@ public class StatManager : MonoBehaviour
             // 예외가 발생한 경우 오류 메시지를 Unity Debug로 출력하고 예외를 다시 throw합니다.
             UnityEngine.Debug.LogError("Error loading stats: " + e.Message);
             throw e;
-        }
-    }
-    public void ModifyStats(int statID, int newStr, int newCon, int newSize, int newEdu, int newApd, int newDex, int newInt, int newLuck, int newHp, int newRHp, int newDp, int newAtk, int newAP)
-    {
-        // statID에 해당하는 스탯을 찾아서 수정합니다.
-        CharacterStats statsToModify = statsList.Find(stat => stat.ID == statID);
-        if (statsToModify.ID != 0)
-        {
-            statsToModify.Str = newStr;
-            statsToModify.Con = newCon;
-            statsToModify.Size = newSize;
-            statsToModify.Edu = newEdu;
-            statsToModify.Apd = newApd;
-            statsToModify.Dex = newDex;
-            statsToModify.Int = newInt;
-            statsToModify.Luck = newLuck;
-            statsToModify.Hp = newHp;
-            statsToModify.RHp = newRHp;
-            statsToModify.Dp = newDp;
-            statsToModify.Atk = newAtk;
-            statsToModify.AP = newAP;
-
-            // 수정된 데이터를 XML 파일에 저장합니다.
-            SaveStatsToXML();
-        }
-    }
-
-    private void SaveStatsToXML()
-    {
-        try
-        {
-            XmlDocument xmlDoc = new XmlDocument();
-
-            // 이미 존재하는 XML 파일 열기
-            if (File.Exists(xmlFilePath))
-            {
-                xmlDoc.Load(xmlFilePath);
-            }
-            else
-            {
-                // 존재하지 않으면 새로운 XML 문서 생성
-                XmlElement rootElement = xmlDoc.CreateElement("BasicStats");
-                xmlDoc.AppendChild(rootElement);
-            }
-
-            // 스탯 데이터를 순회하며 XML 요소로 추가합니다.
-            foreach (CharacterStats stats in statsList)
-            {
-                XmlElement statsElement = xmlDoc.CreateElement("Stats");
-                statsElement.SetAttribute("ID", stats.ID.ToString());
-                statsElement.SetAttribute("Name", stats.Name);
-                statsElement.SetAttribute("Str", stats.Str.ToString());
-                statsElement.SetAttribute("Con", stats.Con.ToString());
-                statsElement.SetAttribute("Size", stats.Size.ToString());
-                statsElement.SetAttribute("Edu", stats.Edu.ToString());
-                statsElement.SetAttribute("Apd", stats.Apd.ToString());
-                statsElement.SetAttribute("Dex", stats.Dex.ToString());
-                statsElement.SetAttribute("Int", stats.Int.ToString());
-                statsElement.SetAttribute("Luck", stats.Luck.ToString());
-                statsElement.SetAttribute("Hp", stats.Hp.ToString());
-                statsElement.SetAttribute("RHp", stats.RHp.ToString());
-                statsElement.SetAttribute("Dp", stats.Dp.ToString());
-                statsElement.SetAttribute("Atk", stats.Atk.ToString());
-                statsElement.SetAttribute("AP", stats.AP.ToString());
-
-                xmlDoc.DocumentElement?.AppendChild(statsElement);
-            }
-
-            // XML 파일에 저장합니다.
-            xmlDoc.Save(xmlFilePath);
-        }
-        catch (Exception e)
-        {
-            // 예외가 발생한 경우 오류 메시지를 Unity Debug로 출력합니다.
-            UnityEngine.Debug.LogError("Error saving stats: " + e.Message);
         }
     }
 

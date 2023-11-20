@@ -1,118 +1,83 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class TurnManager : MonoBehaviour
 {
-    public Stat PlayerStat;
-    public Stat EnemyStat;
+    public List<EnemyStat> enemys = new List<EnemyStat>();
+    public List<EnemyHpBar> gobjenemysEnemyHp = new List<EnemyHpBar>();
 
-    public Button[] buttons; // 버튼 배열
+    public GameObject playerbattledisplay;
+    public GameObject BattleUI;
 
-    private int playerADex;
-    private int playerBDex;
-    private int TurnDexDecrease;
+    public int playerspeed;
+    public int TurnDexDecrease;
+    public int AvgDex = 0;
 
-    private int phase = 1;
+    public bool isPlayerATurn = false;
 
-    private bool isPlayerATurn = false;
-    private bool isTurnEnd = false;
+    public static TurnManager instance;
 
-    void Start()
+    public void IsBattle()
     {
-        playerADex = PlayerStat.dex;
-        playerBDex = EnemyStat.dex;
-        TurnDexDecrease = Math.Min(playerADex, playerBDex);
+        playerspeed = DataManager.instance.NowPlayerData.Dex;
+        AvgDex = AvgDex = enemys.Sum(enemyStat => enemyStat.enemyStats.Dex)/enemys.Count();
 
-        if (TurnDexDecrease == playerBDex)
+        TurnDexDecrease = Math.Min(AvgDex, playerspeed);
+
+        if (TurnDexDecrease == playerspeed)
         {
             isPlayerATurn = true;
             Debug.Log("플레이어 A의 Dex가 더 작거나 같습니다.");
         }
 
-        Debug.Log(phase+"페이즈 시작");
-        Debug.Log("플레이어 A의 Dex: " + playerADex);
-        Debug.Log("플레이어 B의 Dex: " + playerBDex);
+        BattleUI.SetActive(true);
 
         StartTurn();
     }
 
-    void StartTurn()
+    public void StartTurn()
     {
-        if (PlayerStat.Dead || EnemyStat.Dead)
+        if (enemys.All(enemy => enemy.IsDead))
         {
-            if (PlayerStat.Dead)
-            {
-                Debug.Log("적이 승리했습니다!");
-            }
-            else if (EnemyStat.Dead)
-            {
-                Debug.Log("플레이어가 승리했습니다!");
-            }
-
-            Debug.Log("게임 종료");
-
+            Debug.Log("플레이이 승리");
             return;
         }
-
-
-        ProcessPlayerTurn();
-
-        if (isTurnEnd)
+        
+        if(isPlayerATurn)
         {
-            Debug.Log(phase+"페이즈 종료");
-            phase += 1;
-
-            playerADex = PlayerStat.dex;
-            playerBDex = EnemyStat.dex;
-            TurnDexDecrease = Math.Min(playerADex, playerBDex);
-        }
-    }
-
-    void ProcessPlayerTurn()
-    {
-        if (isPlayerATurn)
-        {
-            Debug.Log("플레이어 A의 턴");
-            playerADex -= TurnDexDecrease;
-            NoOffButtons(true);
-            Debug.Log("플레이어 A의 Dex 감소: " + playerADex);
+            PlayerTurn();
         }
         else
         {
-            Debug.Log("플레이어 B의 턴");
-            NoOffButtons(false);
-            playerBDex -= TurnDexDecrease;
-            Debug.Log("플레이어 B의 Dex 감소: " + playerBDex);
-        }
-
-        if (playerADex <= 0 && playerBDex <= 0)
-        {
-            Debug.Log("페이즈 종료");
-            isTurnEnd = true;
-        }
-        else
-        {
-            // 턴을 전환
-            isPlayerATurn = !isPlayerATurn;
+            EnemyTurn();
         }
     }
 
-    public void OnNextPhaseButtonClicked()
+    public void PlayerTurn()
     {
-        // 다음 턴으로 전환
+        Debug.Log("플레이어턴");
+        playerbattledisplay.SetActive(true);
+
+    }
+
+    public void PlayerTutnEnd()
+    {
+        Debug.Log("턴종료");
+        isPlayerATurn = false;
         StartTurn();
     }
 
-
-    public void NoOffButtons(bool mode)
+    public void EnemyTurn()
     {
-        foreach (Button button in buttons)
-        {
-            button.interactable = mode;
-        }
+
+    }
+    public void EnemyTurnEnd()
+    {
+        isPlayerATurn = true;
+        StartTurn();
     }
 }
-

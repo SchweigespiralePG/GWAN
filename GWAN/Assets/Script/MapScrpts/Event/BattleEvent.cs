@@ -5,16 +5,15 @@ using UnityEngine;
 public class BattleEvent : MonoBehaviour
 {
 
-    public GameObject BattleManager;
+    public TurnManager Battle;
     public GameObject BattleUI;
 
     public void CallBattle()
     {
-        BattleManager manager = BattleManager.GetComponent<BattleManager>();
 
-        if (manager != null)
+        if (Battle != null)
         {
-            BattleManager.SetActive(true);
+            Battle.IsBattle();
             BattleUI.SetActive(true);
         }
         else
